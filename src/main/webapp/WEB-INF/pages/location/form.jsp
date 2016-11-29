@@ -21,7 +21,7 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-2 col-sm-2 col-lg-2 control-label" for="line_id">线路名称</label>
+                <label class="col-md-2 col-sm-2 col-lg-2 control-label" for="line_id">办公楼名称</label>
                 <div class="col-md-4 col-sm-4 col-lg-4 ">
                     <select id="line_id" name="line.id" class="form-control" v-model="location.line.id">
                         <template v-for="option in lines">
@@ -34,7 +34,7 @@
                         </template>
                     </select>
                 </div>
-                <label for="station_id" class="col-md-2 col-sm-2 col-lg-2 control-label">车站名称</label>
+                <label for="station_id" class="col-md-2 col-sm-2 col-lg-2 control-label">办公室名称</label>
                 <div class="col-md-4 col-sm-4 col-lg-4">
                     <select id="station_id" name="station.id" class="form-control" v-model="location.station.id">
                         <template v-for="option in stations">

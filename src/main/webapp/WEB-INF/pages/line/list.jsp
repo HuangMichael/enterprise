@@ -11,7 +11,7 @@
                     <!-- BOX -->
                     <div class="box border blue">
                         <div class="box-title">
-                            <h4><i class="fa fa-users"></i>线路信息</h4>
+                            <h4><i class="fa fa-users"></i>办公楼信息</h4>
                         </div>
 
                         <%@include file="../common/common-menubar.jsp" %>
@@ -22,12 +22,12 @@
                                     <li class="active">
                                         <a href="#tab_1_0" data-toggle="tab"
                                            style="font-family: 微软雅黑;font-weight: bold">
-                                            <i class="fa fa-home" id="eq"></i>线路信息</a>
+                                            <i class="fa fa-home" id="eq"></i>办公楼信息</a>
                                     </li>
                                     <li>
                                         <a href="#tab_1_1" data-toggle="tab"
                                            style="font-family: 微软雅黑;font-weight: bold">
-                                            <i class="fa fa-flag" id="eqDetail"></i>线路详细信息</a>
+                                            <i class="fa fa-flag" id="eqDetail"></i>办公楼详细信息</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
@@ -36,12 +36,12 @@
                                              id="searchBox">
                                             <div class="col-md-2">
                                                 <input class="form-control" id="lineNo" type="text" name="lineNo"
-                                                       placeholder="线路编号"/>
+                                                       placeholder="办公楼编号"/>
                                             </div>
                                             <div class="col-md-2">
                                                 <input class="form-control" id="description" type="text"
                                                        name="description"
-                                                       placeholder="线路名称"/>
+                                                       placeholder="办公楼名称"/>
                                             </div>
 
                                             <div class="col-md-2">

@@ -12,21 +12,17 @@
                     <!-- BOX -->
                     <div class="box border blue">
                         <div class="box-title">
-                            <h4><i class="fa fa-sitemap"></i>外委单位信息</h4>
+                            <h4><i class="fa fa-sitemap"></i>维修单位信息</h4>
                         </div>
-
-
                         <%@include file="../common/common-menubar.jsp" %>
-
-
                         <div class="box-body">
                             <div class="tabbable">
                                 <ul class="nav nav-tabs" id="myTab">
                                     <li class="active"><a href="#tab_1_0" data-toggle="tab">
-                                        <i class="fa fa-home" id="unit"></i>外委单位信息</a>
+                                        <i class="fa fa-home" id="unit"></i>维修单位信息</a>
                                     </li>
                                     <li><a href="#tab_1_1" data-toggle="tab">
-                                        <i class="fa fa-flag" id="unitDetail"></i>外委单位明细信息</a>
+                                        <i class="fa fa-flag" id="unitDetail"></i>维修单位明细信息</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">

@@ -6,7 +6,7 @@
         <th data-column-id="id" data-width="5%">序号</th>
         <th data-column-id="id" data-type="numeric" data-identifier="true" data-visible="false">ID
         <th data-column-id="stationNo" data-width="15%">编号</th>
-        <th data-column-id="description" data-width="25%">车站</th>
+        <th data-column-id="description" data-width="25%">办公室</th>
         <th data-column-id="sortNo" data-width="5%">排序</th>
     </tr>
     </thead>

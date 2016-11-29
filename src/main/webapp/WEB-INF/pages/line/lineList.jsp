@@ -9,8 +9,8 @@
         <th data-column-id="id" data-width="6%">序号</th>
         <th data-column-id="id" data-type="numeric" data-identifier="true" data-visible="false" data-width="6%">ID
         </th>
-        <th data-column-id="lineNo" data-width="30%">线路编号</th>
-        <th data-column-id="description" data-width="60%">线路名称</th>
+        <th data-column-id="lineNo" data-width="30%">办公楼编号</th>
+        <th data-column-id="description" data-width="60%">办公楼名称</th>
     </tr>
     </thead>
 </table>

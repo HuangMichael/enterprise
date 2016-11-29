@@ -2,13 +2,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <form class="form-horizontal myform" role="form" id="detailForm">
     <div class="form-group">
-        <label class="col-md-2 control-label" for="lineNo">线路编号</label>
+        <label class="col-md-2 control-label" for="lineNo">办公楼编号</label>
         <div class="col-md-4 ">
             <input type="text" class="form-control" id="lineNo" name="lineNo" v-model="line.lineNo">
             <input type="hidden" class="form-control" id="id" name="id" v-model="line.id">
         </div>
         <div class="col-md-2 control-label">
-            <label for="description">线路描述</label>
+            <label for="description">办公楼描述</label>
         </div>
         <div class="col-md-4 ">
             <input type="text" class="form-control" id="description" name="description" v-model="line.description">
