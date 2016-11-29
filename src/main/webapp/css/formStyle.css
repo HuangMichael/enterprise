@@ -1,0 +1,25 @@
+
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, span, ul, .optionMenu {
+    font-family: 微软雅黑, '宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    font-size: 12px;
+}
+
+.treeContainer {
+    height: 700px;
+    overflow-y: scroll
+}
+
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #CCFFFF;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+    background-color: #FFFFCC;
+}
+
+.expired {
+    font-color: red;
+}
