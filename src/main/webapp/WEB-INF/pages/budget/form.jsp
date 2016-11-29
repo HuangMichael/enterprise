@@ -79,10 +79,10 @@
                         style="width:100%" required>
                     <template v-for="option in eqClasses">
                         <option :value="option.id" v-if="option.id==budget.eqClass.id" selected>
-                            {{option.cpName+option.cname }}
+                            {{option.description }}
                         </option>
                         <option :value="option.id" v-else>
-                            {{option.cpName+option.cname }}
+                            {{option.description }}
                         </option>
                     </template>
                 </select>
