@@ -68,9 +68,9 @@ public class EquipmentController extends BaseController implements LocationSepar
 
     @Autowired
     LocationsService locationsService;
-
     @Autowired
     VlocationsRepository vlocationsRepository;
+
     @Autowired
     VequipmentsRepository vequipmentsRepository;
 
@@ -286,39 +286,7 @@ public class EquipmentController extends BaseController implements LocationSepar
     }
 
 
-    /**
-     * 查询根节点
-     */
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
-    @ResponseBody
-    public Equipments add(
-            @RequestParam("eqCode") String eqCode,
-            @RequestParam(value = "description", required = false) String description,
-            @RequestParam(value = "manager", required = false) String manager,
-            @RequestParam(value = "maintainer", required = false) String maintainer,
-            @RequestParam(value = "productFactory", required = false) String productFactory,
-            @RequestParam(value = "locations_id", required = false) Long locations_id,
-            @RequestParam(value = "equipmentsClassification_id", required = false) Long equipmentsClassification_id,
-            @RequestParam(value = "status", defaultValue = "1") String status
-    ) {
-        Equipments equipments = new Equipments();
-        try {
-            equipments.setEqCode(eqCode);
-            equipments.setDescription(description);
-            equipments.setManager(manager);
-            equipments.setMaintainer(maintainer);
-            equipments.setProductFactory(productFactory);
-            equipments.setLocations(locationsService.findById(locations_id));
-            equipments.setEquipmentsClassification(equipmentsClassificationRepository.findById(equipmentsClassification_id));
-            equipments.setStatus(status);
-            equipments.setLocation(equipments.getLocations().getLocation());
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return equipmentAccountService.save(equipments);
-
-    }
 
     /**
      * @param eqCode 设备编号

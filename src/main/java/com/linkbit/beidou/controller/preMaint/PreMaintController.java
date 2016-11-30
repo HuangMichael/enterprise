@@ -63,7 +63,7 @@ public class PreMaintController extends BaseController {
 
         Map<String, String[]> parameterMap = request.getParameterMap();
         Pageable pageable = new PageRequest(current - 1, rowCount.intValue(), super.getSort(parameterMap));
-        return new PageUtils().searchBySortService(preMaintSearchService, searchPhrase, 2, current, rowCount,pageable);
+        return new PageUtils().searchBySortService(preMaintSearchService, searchPhrase, 2, current, rowCount, pageable);
     }
 
 
@@ -95,7 +95,6 @@ public class PreMaintController extends BaseController {
     @RequestMapping(value = "/save")
     @ResponseBody
     public ReturnObject save(PreMaint preMaint) {
-        preMaint.setLocation(getUserLocation());
         preMaint = preMaintService.save(preMaint);
         return commonDataService.getReturnType(preMaint != null, "预防性维修信息保存成功", "预防性维修信息保存失败");
     }

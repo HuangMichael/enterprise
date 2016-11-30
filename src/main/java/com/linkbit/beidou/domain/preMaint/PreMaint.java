@@ -46,9 +46,9 @@ public class PreMaint {
     @Column(length = 1)
     private int unit; //单位
 
-
+/*
     @Column(length = 20)
-    private String location; //加入冗余字段location 方便模糊查询
+    private String location; //加入冗余字段location 方便模糊查询*/
 
 
     @Column(length = 20)

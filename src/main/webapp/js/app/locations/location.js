@@ -15,6 +15,7 @@ var setting = {
     }
 };
 var zNodes = [];
+var lines, stations = [];
 var validationConfig = {
     message: '该值无效 ',
     fields: {
@@ -114,11 +115,6 @@ $(document).ready(function () {
         e.preventDefault();
         saveMainObject(formName);
     });
-
-
-    afterClick(1);
-
-
 });
 var flag = false;
 function add() {
@@ -128,15 +124,11 @@ function add() {
     if (!id) {
         id = 0
     }
-    var url = "/location/create/" + id;
-    $("#contentDiv").load(url, function () {
-        $("#line_id").val(selectedNode.line);
-        $("#parent_id").val(id);
-        $("#station_id").val(selectedNode.station);
-        flag = true
-    });
 
-
+    vdm.$set("lines", lines);
+    vdm.$set("stations", stations)
+    vdm.$set("location", null);
+    setFormReadStatus(formName, false);
 }
 
 

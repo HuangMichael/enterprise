@@ -47,8 +47,6 @@ public class EqAddBillService extends BaseService {
     }
 
 
-
-
     /**
      * @param eqName
      * @return 按照配件名称模糊查询分页查询
@@ -56,7 +54,6 @@ public class EqAddBillService extends BaseService {
     public List<VEqAddBill> findByEqNameContaining(String eqName) {
         return vEqAddBillRepository.findByEqNameContaining(eqName);
     }
-
 
 
     /**
@@ -121,20 +118,17 @@ public class EqAddBillService extends BaseService {
      */
     @Transactional
     public Equipments addEq(EqAddBill eqAddBill) {
-        Vlocations vlocations = vlocationsRepository.findById(eqAddBill.getLocation().getId());
+        // Vlocations vlocations = vlocationsRepository.findById(eqAddBill.getLocation().getId());
         Equipments equipments = new Equipments();
         equipments.setEqCode(eqAddBill.getEqCode());
         equipments.setEquipmentsClassification(eqAddBill.getEqClass());
         equipments.setLocations(eqAddBill.getLocation());
-        equipments.setLocation(vlocations.getLocation());
+        // equipments.setLocation(vlocations.getLocation());
         equipments.setDescription(eqAddBill.getEqName());
-        equipments.setVlocations(vlocations);
+        // equipments.setVlocations(vlocations);
         equipments.setRunning(CommonStatusType.STATUS_ON);
         equipments.setStatus(CommonStatusType.STATUS_YES);
         equipments = equipmentAccountService.save(equipments);
-
-        System.out.print(equipments.toString());
-
         return equipments;
     }
 

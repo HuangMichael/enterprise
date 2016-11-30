@@ -5,22 +5,16 @@
     <div class="row">
         <div class="col-md-8 col-sm-8 col-lg-8">
             <div class="form-group">
-                <label class="col-md-2 col-sm-2 col-lg-2 control-label" for="location">位置编号</label>
-                <div class="col-md-4 col-sm-4 col-lg-4 ">
-                    <input class="form-control" id="location" type="text" name="location" value="${location.location}"
-                           v-model="location.location" readonly/>
-
-                </div>
-
+                <%--   <label class="col-md-2 col-sm-2 col-lg-2 control-label" for="location">位置编号</label>
+                   <div class="col-md-4 col-sm-4 col-lg-4 ">
+                       <input class="form-control" id="location" type="text" name="location" value="${location.location}"
+                              v-model="location.location" readonly/>
+                   </div>--%>
                 <label for="description" class="col-md-2 col-sm-2 col-lg-2 control-label">位置名称</label>
                 <div class="col-md-4 col-sm-4 col-lg-4">
                     <input class="form-control" id="description" type="text" name="description"
                            value="${location.description}" v-model="location.description" required/>
                 </div>
-
-            </div>
-
-            <div class="form-group">
                 <label class="col-md-2 col-sm-2 col-lg-2 control-label" for="line_id">办公楼名称</label>
                 <div class="col-md-4 col-sm-4 col-lg-4 ">
                     <select id="line_id" name="line.id" class="form-control" v-model="location.line.id">
@@ -34,6 +28,8 @@
                         </template>
                     </select>
                 </div>
+            </div>
+            <div class="form-group">
                 <label for="station_id" class="col-md-2 col-sm-2 col-lg-2 control-label">办公室名称</label>
                 <div class="col-md-4 col-sm-4 col-lg-4">
                     <select id="station_id" name="station.id" class="form-control" v-model="location.station.id">
@@ -47,8 +43,7 @@
                         </template>
                     </select>
                 </div>
-            </div>
-            <div class="form-group">
+
                 <label class="col-md-2 col-sm-2 col-lg-2 control-label" for="superior">负责人员</label>
                 <div class="col-md-4 col-sm-4 col-lg-4">
                     <input class="form-control" id="superior" type="text" name="superior" value="${location.superior}"

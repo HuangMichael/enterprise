@@ -21,7 +21,6 @@ public interface VpreMaintRepository extends PagingAndSortingRepository<VpreMain
      */
     Page<VpreMaint> findAll(Pageable pageable);
 
-
     /**
      * @param desc
      * @param pageable
@@ -37,10 +36,4 @@ public interface VpreMaintRepository extends PagingAndSortingRepository<VpreMain
      */
     List<VpreMaint> findByPmDescContainingAndLocationContains(String desc,String location);
 
-
-    /**
-     * @param desc
-     * @return 分页
-     */
-    List<VpreMaint> findByPmDescContaining(String desc);
 }

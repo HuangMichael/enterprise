@@ -2,10 +2,12 @@ package com.linkbit.beidou.service.equipments;
 
 import com.linkbit.beidou.dao.equipments.EquipmentsRepository;
 import com.linkbit.beidou.dao.equipments.VEqRepository;
+import com.linkbit.beidou.dao.locations.VlocationsRepository;
 import com.linkbit.beidou.dao.outsourcingUnit.OutsourcingUnitRepository;
 import com.linkbit.beidou.domain.equipments.Equipments;
 import com.linkbit.beidou.domain.equipments.Vequipments;
 import com.linkbit.beidou.domain.locations.Locations;
+import com.linkbit.beidou.domain.locations.Vlocations;
 import com.linkbit.beidou.domain.role.Role;
 import com.linkbit.beidou.domain.units.Units;
 import com.linkbit.beidou.service.app.BaseService;
@@ -19,6 +21,7 @@ import org.springframework.beans.factory.parsing.Location;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +31,7 @@ import java.util.List;
  * 设备台账业务类
  */
 @Service
-public class EquipmentAccountService extends BaseService  {
+public class EquipmentAccountService extends BaseService {
 
     Log log = LogFactory.getLog(this.getClass());
 
@@ -39,6 +42,10 @@ public class EquipmentAccountService extends BaseService  {
 
     @Autowired
     VEqRepository vEqRepository;
+
+
+    @Autowired
+    VlocationsRepository vlocationsRepository;
 
 
     @Autowired
@@ -53,27 +60,13 @@ public class EquipmentAccountService extends BaseService  {
      * @param equipments 保存设备信息
      * @return
      */
+    @Transactional
     public Equipments save(Equipments equipments) {
+        // equipments = updateLocation(equipments);
         equipments = equipmentsRepository.save(equipments);
         return equipments;
     }
 
-
-    /**
-     * @param equipments 保存设备信息
-     * @return
-     */
-    public Equipments updateLocation(Equipments equipments) {
-
-        //判断locations字段的值是否为空
-        Locations locations = equipments.getLocations();
-        //如果为空将更新location字段  如果已经存在不作处理
-        if (locations != null && locations.getLocation() != null && !locations.getLocation().equals("")) {
-            equipments.setLocation(locations.getLocation());
-            equipments = equipmentsRepository.save(equipments);
-        }
-        return equipments;
-    }
 
 
     /**

@@ -502,6 +502,8 @@ function getAllLines() {
     $.getJSON(url, function (data) {
         lines = data;
     });
+
+    console.log("lines========="+JSON.stringify(lines));
     return lines;
 }
 
@@ -515,6 +517,7 @@ function getAllStations() {
     $.getJSON(url, function (data) {
         stations = data;
     });
+    console.log("stations========="+JSON.stringify(stations));
     return stations;
 }
 

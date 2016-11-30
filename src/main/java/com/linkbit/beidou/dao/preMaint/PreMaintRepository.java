@@ -25,7 +25,7 @@ public interface PreMaintRepository extends CrudRepository<PreMaint, Long>, Pagi
     Page<PreMaint> findAll(Pageable pageable);
 
 
-    @Query("select v.id from PreMaint v where v.location like :location")
+    @Query("select v.id from PreMaint v where v.equipment.locations.location like :location")
     List<Long> selectAllId(@Param("location") String location);
 
 

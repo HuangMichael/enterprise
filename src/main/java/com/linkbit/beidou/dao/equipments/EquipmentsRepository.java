@@ -65,25 +65,6 @@ public interface EquipmentsRepository extends CrudRepository<Equipments, Long> {
     Equipments save(Equipments equipments);
 
 
-    /**
-     * @param location 位置编码
-     * @return 按照位置模糊查询资产信息
-     */
-    List<Equipments> findByLocationStartingWith(String location);
-
-
-    /**
-     * @param location 位置编码
-     * @return 按照位置模糊查询资产信息
-     */
-    List<Equipments> findByLocationStartingWithAndStatus(String location, String status);
-
-
-    /**
-     * @param location 位置编码
-     * @return 按照位置模糊查询资产信息
-     */
-    List<Equipments> findByLocationStartingWithOrderByIdDesc(String location);
 
     /**
      * @param eqCode 设备编号
