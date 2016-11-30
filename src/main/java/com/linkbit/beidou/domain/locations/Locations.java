@@ -44,9 +44,6 @@ public class Locations implements java.io.Serializable {
     @Column(length = 1)
     private Long locLevel;
 
-    @Column(length = 50)
-    private String imgUrl;
-
     @Column(length = 1, columnDefinition = "default 1") //默认位置正常
     private String status;//状态
     @Column(length = 1)

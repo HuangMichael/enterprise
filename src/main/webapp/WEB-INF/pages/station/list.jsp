@@ -11,7 +11,7 @@
                     <!-- BOX -->
                     <div class="box border blue">
                         <div class="box-title">
-                            <h4><i class="fa fa-users"></i>办公室</h4>
+                            <h4><i class="fa fa-users"></i>办公室信息</h4>
                         </div>
 
                         <%@include file="../common/common-menubar.jsp" %>
@@ -35,7 +35,7 @@
                                             <div class="col-md-2">
                                                 <select class="form-control" id="line" name="line"
                                                         style="width:100%" required>
-                                                    <option></option>
+                                                    <option ></option>
                                                     <template v-for="option in lines">
                                                         <option :value="option.id">
                                                             {{option.description }}

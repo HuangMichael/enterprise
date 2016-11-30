@@ -3,20 +3,20 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <div class="form-group">
-    <label class="col-md-2" for="stationNo">车站编号</label>
+    <label class="col-md-2" for="stationNo">办公室编号</label>
     <div class="col-md-4">
         <input type="text" class="form-control" id="stationNo" name="stationNo" v-model="station.stationNo">
         <input type="hidden" class="form-control" id="id" name="id" v-model="station.id">
     </div>
     <div class="col-md-2">
-        <label for="description">车站名称</label>
+        <label for="description">办公室名称</label>
     </div>
     <div class="col-md-4">
         <input type="text" class="form-control" id="description" name="description" v-model="station.description">
     </div>
 </div>
 <div class="form-group">
-    <div class="col-md-2"><label for="lineId">线路名称</label></div>
+    <div class="col-md-2"><label for="lineId">办公楼名称</label></div>
     <div class="col-md-4">
         <select v-model="station.line.id" class="form-control" id="lineId" name="line.id" required style="width:100%"
                 required>
@@ -30,7 +30,7 @@
             </template>
         </select>
     </div>
-    <div class="col-md-2"><label for="type">车站类型</label></div>
+    <div class="col-md-2"><label for="type">办公室类型</label></div>
     <div class="col-md-4">
         <select v-model="station.type" class="form-control" id="type" name="type" required style="width:100%" required>
             <template v-for="option in types">

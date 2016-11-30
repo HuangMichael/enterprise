@@ -108,22 +108,14 @@ public class LocationController extends BaseController {
 
     /**
      * @param id
-     * @param modelMap
-     * @param session
      * @return 新建位置信息
      */
     @RequestMapping(value = "/create/{id}")
-    public String create(@PathVariable("id") Long id, ModelMap modelMap, HttpSession session) {
-        Locations newObj = locationsService.create(id);
-        User user = SessionUtil.getCurrentUserBySession(session);
-        newObj.setSuperior(user.getPerson().getPersonName());
-        newObj.setStatus("1");
-        modelMap.put("locations", newObj);
-        commonDataService.findLines(session);
-        commonDataService.findStations(session);
-        List<Locations> locationsList = locationsService.findAll();
-        modelMap.put("locationsList", locationsList);
-        return "/location/create";
+    @ResponseBody
+    public Locations create(@PathVariable("id") Long id) {
+        Locations locations = locationsService.create(id);
+        locations.setStatus("1");
+        return locations;
     }
 
 
@@ -153,13 +145,14 @@ public class LocationController extends BaseController {
 
     /**
      * @param id
-     * @return删除位置信息
+     * @return
      */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     @ResponseBody
     public ReturnObject delete(@PathVariable("id") Long id) {
         Locations locations = locationsService.findById(id);
-        return locationsService.delete(locations);
+        Boolean deleted = locationsService.delete(locations);
+        return commonDataService.getReturnType(deleted, "位置信息删除成功！", "位置信息删除失败,数据有关联，请联系管理员!");
     }
 
 

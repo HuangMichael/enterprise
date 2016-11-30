@@ -114,33 +114,10 @@ public class LocationsService extends BaseService {
      * @param locations 位置信息
      * @return 删除位置信息
      */
-    public ReturnObject delete(Locations locations) {
-        //有子节点不能删除
+    public Boolean delete(Locations locations) {
         Long id = locations.getId();
-        ReturnObject returnObject = new ReturnObject();
-        boolean hasChild = !locationsRepository.findByParent(locations.getId()).isEmpty();
-        if (hasChild) {
-            returnObject.setResult(false);
-            returnObject.setResultDesc("该位置下有位置信息不能删除!");
-        } else {
-            try {
-                locationsRepository.delete(locations);
-                //再查询一次查看是否删除
-                Locations l = locationsRepository.findById(id);
-                if (l == null) {
-                    returnObject.setResult(true);
-                    returnObject.setResultDesc("位置信息删除成功!");
-
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-                returnObject.setResult(false);
-                returnObject.setResultDesc("位置信息有关联数据，无法删除，请联系管理员!");
-
-            }
-
-        }
-        return returnObject;
+        locationsRepository.delete(locations);
+        return locationsRepository.findById(id) == null;
     }
 
 

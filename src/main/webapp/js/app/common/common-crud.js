@@ -158,6 +158,18 @@ function add() {
 
 
 /**
+ * 新增树节点 只对树形应用起作用
+ */
+function addNode() {
+    var tree = $.fn.zTree.getZTreeObj("tree");
+    var selectedNode = zTree.getSelectedNodes()[0];
+    var id = selectedNode.id;
+    var parent = findById(id);
+    return parent;
+}
+
+
+/**
  * 编辑记录 使文本框可编辑
  */
 function edit() {
@@ -503,7 +515,7 @@ function getAllLines() {
         lines = data;
     });
 
-    console.log("lines========="+JSON.stringify(lines));
+    console.log("lines=========" + JSON.stringify(lines));
     return lines;
 }
 
@@ -517,7 +529,7 @@ function getAllStations() {
     $.getJSON(url, function (data) {
         stations = data;
     });
-    console.log("stations========="+JSON.stringify(stations));
+    console.log("stations=========" + JSON.stringify(stations));
     return stations;
 }
 

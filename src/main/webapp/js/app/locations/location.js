@@ -15,7 +15,6 @@ var setting = {
     }
 };
 var zNodes = [];
-var lines, stations = [];
 var validationConfig = {
     message: '该值无效 ',
     fields: {
@@ -86,48 +85,29 @@ $(document).ready(function () {
     }
 
 
-    initSelect();
-
-
     dataTableName = "#eqDataTable";
     formName = "#detailForm";
     mainObject = "location";
     docName = "设备信息";
     exportObject = "equipment";
-
-    lines = getAllLines();
-    stations = getAllStations();
-
+    validateForm(validationConfig);
 
     vdm = new Vue({
-        el: formName,
-        data: {
-            location: location,
-            lines: lines,
-            stations: stations
-        }
+        el: formName
     });
 
 
-    $(formName)
-        .bootstrapValidator(validationConfig).on('success.form.bv', function (e) {
-        // Prevent form submission
-        e.preventDefault();
-        saveMainObject(formName);
-    });
+    initSelect();
 });
 var flag = false;
-function add() {
-    var tree = $.fn.zTree.getZTreeObj("tree");
-    var selectedNode = zTree.getSelectedNodes()[0];
-    var id = selectedNode.id;
-    if (!id) {
-        id = 0
-    }
 
-    vdm.$set("lines", lines);
-    vdm.$set("stations", stations)
-    vdm.$set("location", null);
+
+function add() {
+    var parent = addNode();
+    var url = mainObject + "/create/" + parent.id;
+    $.getJSON(url, function (data) {
+        vdm.$set(mainObject, data);
+    })
     setFormReadStatus(formName, false);
 }
 
@@ -192,16 +172,15 @@ function del() {
                         type: "GET",
                         url: url,
                         success: function (msg) {
-                            if (msg) {
-                                showMessageBox("info", "位置信息删除成功!");
+                            if (msg.result) {
+                                showMessageBox("info", msg["resultDesc"]);
                                 var zTree = $.fn.zTree.getZTreeObj("tree");
                                 zTree.removeNode(zTree.getSelectedNodes()[0]);
                                 zTree.selectNode(zTree.getNodeByParam("id", 1));
-                                showMessageBox("info", data["resultDesc"]);
                             }
                         },
                         error: function (msg) {
-                            showMessageBox("danger", "位置信息有关联数据，无法删除，请联系管理员");
+                            showMessageBox("danger", msg["resultDesc"]);
                         }
                     });
                 }
