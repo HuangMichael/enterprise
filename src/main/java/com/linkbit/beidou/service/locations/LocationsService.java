@@ -151,15 +151,13 @@ public class LocationsService extends BaseService {
      * @return 如果有上级根据上级生成对象  如果没有将其当做根节点
      */
     public Locations create(Long parentId) {
-        log.info("根据父节点创建新节点------------------" + parentId);
         Locations newObj = new Locations();
         if (parentId != null) {
             Locations parent = locationsRepository.findById(parentId);
             String location = getLocationsNo(parent);
-            System.out.println("location----" + location);
             newObj.setLocation(getLocationsNo(parent));  //编号不自动生成
-            newObj.setLine(parent.getLine());
-            newObj.setStation(parent.getStation());
+            /*newObj.setLine(parent.getLine());
+            newObj.setStation(parent.getStation());*/
             newObj.setParent(parent.getId());
             Long level = 0l;
             if (parent.getLocLevel() != null) {

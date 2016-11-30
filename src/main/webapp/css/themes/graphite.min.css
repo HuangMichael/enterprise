@@ -1,0 +1,81 @@
+#page {
+    background: none repeat scroll 0 0 #bcbcbc
+}
+
+.navbar {
+    background: none repeat scroll 0 0 #424242;
+    border: 0;
+    border-radius: 0;
+    margin: 0
+}
+
+.navbar .navbar-brand {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+    width: 250px
+}
+
+.navbar .navbar-brand img {
+    position: absolute;
+    max-width: 60%;
+    height: 30px;
+    width: 120px;
+    top: 8px;
+    left: 60px
+}
+
+.navbar .dropdown-toggle {
+    color: #fff
+}
+
+.navbar .dropdown-toggle i {
+    color: #fff;
+    font-size: 17px
+}
+
+.navbar .dropdown-toggle .badge {
+    background-color: #dd5a43;
+    border-radius: 99px !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    height: 16px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 24px;
+    text-align: center;
+    text-shadow: none !important;
+    top: 8px
+}
+
+.navbar .dropdown-toggle .username {
+    font-weight: 600
+}
+
+.navbar #header-notification .dropdown-toggle i, .navbar #header-message .dropdown-toggle i, .navbar #header-tasks .dropdown-toggle i {
+    color: #fff
+}
+
+.navbar #navbar-left li.dropdown {
+    background-color: #4f4f4f;
+    border-right: 1px solid #353535;
+    font-weight: 400
+}
+
+.navbar #navbar-left li.dropdown:first-child {
+    border-left: 1px solid #353535
+}
+
+.navbar #navbar-left i {
+    margin-right: 5px;
+    color: #fff
+}
+
+.navbar .nav.navbar-nav.pull-right {
+    min-width: 300px
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .navbar .nav .open > a, .navbar .nav .open > a:hover, .navbar .nav .open > a :focus {
+    background-color: #5c5c5c !important
+}

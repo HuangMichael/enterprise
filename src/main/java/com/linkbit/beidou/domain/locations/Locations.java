@@ -28,13 +28,13 @@ public class Locations implements java.io.Serializable {
     @Column(length = 100)
     private String description;//描述
 
-    @ManyToOne(fetch = FetchType.LAZY)
+/*    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "line_id", referencedColumnName = "id")
     Line line; //线路
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "station_id", referencedColumnName = "id")
-    Station station; //车站
+    Station station; //车站*/
 
     @Column(length = 20)
     String superior;  //负责人

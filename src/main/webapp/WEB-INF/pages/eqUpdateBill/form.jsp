@@ -53,10 +53,10 @@
                     <template v-for="option in eqClasses ">
                         <option :value="option.id "
                                 v-if="option.id==eqUpdateBill.equipments.equipmentsClassification.id " selected>
-                            {{option.cname }}
+                            {{option.description }}
                         </option>
                         <option :value="option.id " v-else>
-                            {{option.cname }}
+                            {{option.description }}
                         </option>
                     </template>
                 </select>
