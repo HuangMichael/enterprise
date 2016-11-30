@@ -154,10 +154,7 @@ public class LocationsService extends BaseService {
         Locations newObj = new Locations();
         if (parentId != null) {
             Locations parent = locationsRepository.findById(parentId);
-            String location = getLocationsNo(parent);
             newObj.setLocation(getLocationsNo(parent));  //编号不自动生成
-            /*newObj.setLine(parent.getLine());
-            newObj.setStation(parent.getStation());*/
             newObj.setParent(parent.getId());
             Long level = 0l;
             if (parent.getLocLevel() != null) {

@@ -2620,8 +2620,8 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info {
     color: #ffffff;
-    background-color: #70afc4;
-    border-color: #5ea5bd;
+    background-color: #424200;
+    border-color: #424242;
 }
 
 .btn-info:hover,
@@ -2656,7 +2656,7 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
     background-color: #70afc4;
-    border-color: #5ea5bd;
+    border-color: #424242;
 }
 
 .btn-info .badge {
@@ -8171,13 +8171,13 @@ fieldset[disabled] .btn-yellow.active {
 }
 
 .box.border.blue {
-    /*border: 1px solid #5ea5bd;*/
+    /*border: 1px solid #424242;*/
 }
 
 .box.border.blue > .box-title {
     color: #FFFFFF !important;
-    background-color: #70afc4;
-    border-bottom: 1px solid #5ea5bd;
+    background-color: #4b4d4e;
+    border-bottom: 1px solid #424242;
 }
 
 .box.border.blue > .box-title h4 {
@@ -8381,13 +8381,13 @@ fieldset[disabled] .btn-yellow.active {
 }
 
 .box.solid.blue {
-    border: 1px solid #507aa4;
+   /* border: 1px solid #507aa4;*/
 }
 
 .box.solid.blue .box-title {
     color: #FFFFFF !important;
-    background-color: #5e87b0 !important;
-    border-bottom: 1px solid #507aa4;
+    /*background-color: #5e87b0 !important;*/
+    /*border-bottom: 1px solid #507aa4;*/
 }
 
 .box.solid.blue .box-title h4 {
