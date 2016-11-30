@@ -107,6 +107,7 @@ $(function () {
     var url = "/commonData/findVEqClass";
     $.getJSON(url, function (data) {
         eqClasses = data;
+        console.log(JSON.stringify(eqClasses));
     });
 
 
@@ -172,7 +173,6 @@ $(function () {
 
 
     historyTab.on('click', function () {
-        console.log("查看维修历史-------------")
         showFixHistory.call(selectedIds[pointer]);
     })
 });

@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <div class="login-box">
-                        <h2 class="bigintro">${sysName}用户登录</h2>
+                        <h2 class="bigintro">${sysName}</h2>
 
                         <div class="divide-40" id="msg" style="font-size: large;color:blue">${error}</div>
                         <form role="form" id="loginForm" name="loginForm" method="post" action="/login">

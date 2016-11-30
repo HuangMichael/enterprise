@@ -9,15 +9,14 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, span, ul, .option
     overflow-y: scroll
 }
 
-
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-    background-color: #CCFFFF;
+    background-color: #f0f0f0;
 }
 
 .table-striped > tbody > tr:nth-child(even) > td,
 .table-striped > tbody > tr:nth-child(even) > th {
-    background-color: #FFFFCC;
+    background-color: #ffffff;
 }
 
 .expired {

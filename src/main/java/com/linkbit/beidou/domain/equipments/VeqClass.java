@@ -10,7 +10,7 @@ import javax.persistence.*;
  * 设备分类视图信息
  */
 @Entity
-@Table(name = "V_EQCLASS")
+@Table(name = "V_EQ_CLASS")
 @Data
 @Setter
 @Getter
@@ -20,11 +20,7 @@ public class VeqClass {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(length = 20)
-    private String classId;
     @Column(length = 50)
-    private String cpName;
-    @Column(length = 50)
-    private String cName;
+    private String cname;
 }
 

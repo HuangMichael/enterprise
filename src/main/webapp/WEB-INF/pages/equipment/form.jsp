@@ -46,14 +46,12 @@
                         style="width:100%;background-color:#ffffce" required>
                     <template v-for="option in eqClasses">
                         <option :value="option.id" v-if="option.id == equipment.equipmentsClassification.id" selected>
-                            {{ option.cpName +'/'+ option.cname }}
+                            {{ option.cname }}
                         </option>
                         <option :value="option.id" v-else>
-                            {{ option.cpName +'/'+ option.cname }}
+                            {{option.cname }}
                         </option>
                     </template>
-
-
                 </select>
             </div>
 
