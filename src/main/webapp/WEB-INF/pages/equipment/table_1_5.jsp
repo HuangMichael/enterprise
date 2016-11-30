@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="row">
+<div class="row" id="recordInfo">
     <div class="col-md-12">
         <!-- BOX -->
         <div class="box border blue">
@@ -16,7 +16,7 @@
                         <label class="col-md-1 control-label" for="eqCode">设备名称</label>
 
                         <div class="col-md-3">
-                            <input class="form-control" id="desciption" type="text" name="desciption"
+                            <input class="form-control" id="description" type="text" name="description"
                                    v-model="e.description" readonly/>
                         </div>
                         <label class="col-md-1 control-label" for="eqCode">设备位置</label>
@@ -32,7 +32,7 @@
         </div>
     </div>
 </div>
-<table id="updateHistoryInfo" class=" table table-striped table-bordered table-hover table-responsive">
+<table id="updateRecords" class=" table table-striped table-bordered table-hover table-responsive">
     <thead>
     <tr>
         <th width="5%" style="overflow: hidden">序号</th>
@@ -45,7 +45,7 @@
         <th width="10%" style="overflow: hidden">批准人</th>
     </tr>
     </thead>
-    <tbody id="history" v-for="uh in records">
+    <tbody id="record" v-for="uh in records">
     <tr>
         <td style="overflow: hidden">{{$index+1}}</td>
         <td style="overflow: hidden">{{uh.dataType}}</td>

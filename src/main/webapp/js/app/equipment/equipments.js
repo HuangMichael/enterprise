@@ -10,7 +10,8 @@ var eqStatuses = [];
 var runStatus = [];
 
 
-var vdm = null, hm = null;
+var vdm = null, hm = null, rm = null,
+    rmListVue = null;
 var pointer = 0;
 $(function () {
     var validateOptions = {
@@ -127,6 +128,8 @@ $(function () {
         {"param": "eqClass", "paramDesc": "设备分类"}
     ];
 
+
+    selectedIds = findAllRecordId();
     vdm = new Vue({
         el: "#detailForm",
         data: {
@@ -143,12 +146,29 @@ $(function () {
         el: "#historyInfo",
         data: {
             e: findById(selectedIds[pointer]),
-            histories: loadFixHistoryByEid(selectedIds[pointer] ? selectedIds[pointer] : null)
+            histories: loadFixHistoryByEid(selectedIds[pointer])
         }
     });
 
 
-    selectedIds = findAllRecordId();
+    rm = new Vue({
+        el: "#recordInfo",
+        data: {
+            e: findById(selectedIds[pointer])
+
+        }
+    });
+
+
+    rmListVue = new Vue({
+
+        el: "#updateRecords",
+        data: {
+
+            records: loadUpdateHistoryByEid(selectedIds[pointer])
+        }
+
+    });
 
 
     var config = {
@@ -164,7 +184,7 @@ $(function () {
         }
     };
     //初始化加载列表
-    initBootGridMenu(dataTableName,config);
+    initBootGridMenu(dataTableName, config);
     //验证保存信息
     validateForm(validateOptions);
     initSelect();
@@ -173,17 +193,32 @@ $(function () {
 
 
     historyTab.on('click', function () {
-        showFixHistory.call(selectedIds[pointer]);
-    })
+        showFixHistory.call();
+    });
+
+    recordsTab.on('click', function () {
+        showUpdateRecords.call();
+    });
 });
 
 
-function showFixHistory(eid) {
+function showFixHistory() {
+    var eid = selectedIds[pointer];
+    console.log("eid-------------" + eid);
     var histories = loadFixHistoryByEid(eid);
-    var xx = $("#locations_id").find("option:selected").text().trim();
-    hm.$set("e", vdm.equipment);
-    hm.$set("e.location.description", xx);
+    rm.$set("e", vdm.equipment);
+    rm.$set("e.location.description", vdm.equipment.location.description);
     hm.$set("histories", histories);
+}
+
+
+function showUpdateRecords(eid) {
+    var eid = selectedIds[pointer];
+    console.log("eid-------------" + eid);
+    var records = loadUpdateHistoryByEid(eid);
+    rm.$set("e", vdm.equipment);
+    rm.$set("e.location.description", vdm.equipment.location.description);
+    rm.$set("records", records);
 }
 
 
@@ -197,6 +232,21 @@ function loadFixHistoryByEid(eid) {
         histories = data;
     });
     return histories;
+}
+
+
+/**
+ * 根据设备ID载入维修历史信息
+ * @param eid
+ * @return {Array}
+ */
+function loadUpdateHistoryByEid(eid) {
+    var url = "/equipment/getUpdateHistoryById/" + eid;
+    var records = [];
+    $.getJSON(url, function (data) {
+        records = data;
+    });
+    return records;
 }
 
 

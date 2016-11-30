@@ -18,7 +18,7 @@
                             <label class="col-md-1 control-label" for="eqCode">设备名称</label>
 
                             <div class="col-md-3">
-                                <input class="form-control" id="desciption" type="text" name="desciption"
+                                <input class="form-control" id="description" type="text" name="description"
                                        v-model="e.description" readonly/>
                             </div>
                             <label class="col-md-1 control-label" for="eqCode">设备位置</label>
@@ -43,7 +43,7 @@
             <th width="10%">跟踪号</th>
             <th width="20%">报修描述</th>
             <th width="10%">操作时间</th>
-          <%--  <th width="20%">故障处理情况</th>--%>
+            <%--  <th width="20%">故障处理情况</th>--%>
             <th width="5%"> 状态</th>
             <th width="5%">跟踪</th>
         </tr>
@@ -55,8 +55,7 @@
             <td>{{h[1]}}</td>
             <td>{{h[2]}}</td>
             <td>{{h[4]}}</td>
-           <%-- <td>{{h[3]}}</td>--%>
-            <td><a class="btn btn-xs" @click="showDetailHistory(h[0])"><i class="glyphicon glyphicon-eye-open"></i></a>
+            <td><a class="btn btn-xs" onclick="showFixDetail()"><i class="glyphicon glyphicon-eye-open"></i></a>
             </td>
         </tr>
         </tbody>
