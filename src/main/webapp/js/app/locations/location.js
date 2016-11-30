@@ -75,7 +75,12 @@ $(document).ready(function () {
         demoIframe.bind("load", loadReady);
         zTree = $.fn.zTree.getZTreeObj("tree");
         zTree.selectNode(zTree.getNodeByParam("id", zNodes[0]));
-        firstLoad(zNodes[0]);
+        //firstLoad(zNodes[0]);
+
+
+        afterClick.call(zNodes[0]["id"]);
+
+
     });
     function loadReady() {
         var bodyH = demoIframe.contents().find("body").get(0).scrollHeight, htmlH = demoIframe.contents().find("html").get(0).scrollHeight, maxH = Math.max(bodyH, htmlH), minH = Math.min(bodyH, htmlH), h = demoIframe.height() >= maxH ? minH : maxH;
@@ -287,16 +292,18 @@ function add2LocCart() {
  * @param data
  * 首次加载函数 在form中显示第一条记录内容
  */
-function firstLoad(data) {
-    if (data.length > 0) {
-        $("#form #lid").val(data.id);
-        $("#form #location").val(data.location);
-        $("#form #description").val(data.name);
-        $("#form #superior").val(data.superior);
-        //$("#parent_id").val(null).attr("readonly", "readonly");
+/*
+ function firstLoad(data) {
+ if (data.length > 0) {
+ $("#form #lid").val(data.id);
+ $("#form #location").val(data.location);
+ $("#form #description").val(data.name);
+ $("#form #superior").val(data.superior);
+ //$("#parent_id").val(null).attr("readonly", "readonly");
 
-    }
-}
+ }
+ }
+ */
 
 
 /**
