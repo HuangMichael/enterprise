@@ -1,4 +1,5 @@
 var zTree;
+appType = appTypeArray[1];  //tree
 var demoIframe;
 var reportModel = null;
 var eqClasses = [];

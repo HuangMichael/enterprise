@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80da2167-c0c3-4f4e-b07a-b0e671f03e0e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/domain/locations/Locations.java" afterPath="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/domain/locations/Locations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/location/form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/location/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/list.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" />
     </list>
@@ -83,16 +77,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LocationsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-383">
-              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,8 +100,8 @@
       <file leaf-file-name="location.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -143,7 +127,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common-crud.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="178" column="44" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -270,14 +264,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/themes/default.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/cloud-admin.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/location/detail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/location/form.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/domain/locations/Locations.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" />
       </list>
     </option>
   </component>
@@ -641,7 +635,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="EquipmentsClassificationController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentsClassificationController.java&#10;login&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.app.LoginController&#10;locationCon&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;crud&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;common-head&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-head.jsp&#10;theme&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/bootstrap-dist/css/bootstrap-theme.min.css&#10;line&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.line.Line&#10;LocationsService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;locations&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.locations.Locations&#10;PreMaintRepository&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;equipmentsRe&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.EquipmentsRepository&#10;CommonDataService &#9;PSI&#9;JAVA://com.linkbit.beidou.service.commonData.CommonDataService&#10;addBillser&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EqAddBillService.java&#10;equi&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;EquipmentAccountService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EquipmentAccountService.java&#10;equip&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.equipments.Equipments&#10;PreMaintController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/preMaint/PreMaintController.java&#10;preS&#9;PSI&#9;JAVA://com.linkbit.beidou.service.preMaint.PreMaintSearchService&#10;PREMAIN&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;location&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;eq&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipmentsClassification/equipmentsClassification.js&#10;budget&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/budget/budget.js&#10;CommonDa&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/common/CommonDataController.java&#10;locationS&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;equipment&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EquipmentsClassificationController&#10;eqadd&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/eqAddBill/eqAddBill.js&#10;equpdate&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/eqUpdateBill/eqUpdateBill.js&#10;ec&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/ecbudget/ecbudget.js&#10;bud&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/budget/budget.js&#10;LOCA&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.locations.LocationController&#10;location.js&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/locations/location.js&#10;commonDataC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.common.CommonDataController&#10;PREMAINT&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.preMaint.PreMaintController&#10;pre&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/preMaint/preMaint.js&#10;equpdateC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqUpdateBillController&#10;eqAddC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqAddBillController&#10;budgetC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.budget.BudgetController&#10;user&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/user/user.js&#10;role&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/role/role.js&#10;person&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/person/person.js&#10;station&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.line.StationController&#10;units&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.units.UnitsController&#10;unit&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/units/units.js&#10;cru&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/common/common-crud.js&#10;roleC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.role.RoleController&#10;person1&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/person/person1.js&#10;personC&#9;FILE&#9;file://E:/dev/novsky/src/main/java/com/linkbit/beidou/controller/person/PersonController.java&#10;perso&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/person/person.js&#10;base&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.common.BaseController&#10;auth&#9;FILE&#9;file://E:/dev/novsky/src/main/java/com/linkbit/beidou/controller/app/AuthorityController.java" />
+    <property name="SearchEverywhereHistoryKey" value="crud&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;EquipmentsClassificationController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentsClassificationController.java&#10;login&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.app.LoginController&#10;locationCon&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;common-head&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-head.jsp&#10;theme&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/bootstrap-dist/css/bootstrap-theme.min.css&#10;line&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.line.Line&#10;LocationsService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;locations&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.locations.Locations&#10;PreMaintRepository&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;equipmentsRe&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.EquipmentsRepository&#10;CommonDataService &#9;PSI&#9;JAVA://com.linkbit.beidou.service.commonData.CommonDataService&#10;addBillser&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EqAddBillService.java&#10;equi&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;EquipmentAccountService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EquipmentAccountService.java&#10;equip&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.equipments.Equipments&#10;PreMaintController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/preMaint/PreMaintController.java&#10;preS&#9;PSI&#9;JAVA://com.linkbit.beidou.service.preMaint.PreMaintSearchService&#10;PREMAIN&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;location&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;eq&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipmentsClassification/equipmentsClassification.js&#10;budget&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/budget/budget.js&#10;CommonDa&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/common/CommonDataController.java&#10;locationS&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;equipment&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EquipmentsClassificationController&#10;eqadd&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/eqAddBill/eqAddBill.js&#10;equpdate&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/eqUpdateBill/eqUpdateBill.js&#10;ec&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/ecbudget/ecbudget.js&#10;bud&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/budget/budget.js&#10;LOCA&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.locations.LocationController&#10;location.js&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/locations/location.js&#10;commonDataC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.common.CommonDataController&#10;PREMAINT&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.preMaint.PreMaintController&#10;pre&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/preMaint/preMaint.js&#10;equpdateC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqUpdateBillController&#10;eqAddC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqAddBillController&#10;budgetC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.budget.BudgetController&#10;user&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/user/user.js&#10;role&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/role/role.js&#10;person&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/person/person.js&#10;station&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.line.StationController&#10;units&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.units.UnitsController&#10;unit&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/units/units.js&#10;cru&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/common/common-crud.js&#10;roleC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.role.RoleController&#10;person1&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/person/person1.js&#10;personC&#9;FILE&#9;file://E:/dev/novsky/src/main/java/com/linkbit/beidou/controller/person/PersonController.java&#10;perso&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/person/person.js&#10;base&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.common.BaseController&#10;auth&#9;FILE&#9;file://E:/dev/novsky/src/main/java/com/linkbit/beidou/controller/app/AuthorityController.java" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="186" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="210" />
@@ -1545,7 +1539,7 @@
       <workItem from="1480403458202" duration="11000" />
       <workItem from="1480404278489" duration="13000" />
       <workItem from="1480404485794" duration="7987000" />
-      <workItem from="1480469192589" duration="14193000" />
+      <workItem from="1480469192589" duration="16147000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1471500329538</created>
@@ -1887,7 +1881,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1698335000" />
+    <option name="totallyTimeSpent" value="1700289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1912,12 +1906,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43109152" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5117057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.9107527" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031419285" sideWeight="0.9107527" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.9328277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.93176734" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.06717227" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.06823266" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.248104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2341,14 +2335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="148" column="12" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/location/form.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -2397,14 +2383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/linkbit/beidou/service/unit/UnitService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -2441,6 +2419,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="178" column="44" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
           <folding />
         </state>
       </provider>

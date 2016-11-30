@@ -18,8 +18,12 @@ var eqs = [];
 var stations = [];
 var units = []; //外委单位信息
 var searchModel = [];
-
-
+var appTypeArray = ["list", "tree"];
+var defaultAppType = appTypeArray[0];
+var appType = defaultAppType;
+var newNode = null;
+var parentNode = null;
+var formReadOnly = true;
 /**
  *
  * @returns {string}
@@ -54,7 +58,6 @@ function validateForm(validationConfig) {
 function saveMainObject(formName) {
     var objStr = getFormDataAsJSON(formName);
     var object = JSON.parse(objStr);
-    console.log("save" + JSON.stringify(object));
     var url = getMainObject() + "/save";
     $.post(url, object, function (data) {
         if (data.result) {
@@ -70,26 +73,24 @@ function saveMainObject(formName) {
 }
 
 
-function saveTree(formName, childZNode) {
+function saveTree(formName, childZNode, parent) {
     var objStr = getFormJsonData(formName);
     var object = JSON.parse(objStr);
     var url = mainObject + "/save";
-
     $.ajax({
         type: "POST", url: url, data: object, dataType: "JSON", success: function (obj) {
-
             if (object.id) {
                 updateNode(null, childZNode);
                 showMessageBox("info", "信息更新成功");
             } else {
                 addNodeAfterChangeOperation(null, childZNode, parent);
-                showMessageBox("info", "信息添加成功")
+                showMessageBox("info", "信息添加成功");
             }
         }, error: function (msg) {
             if (object.id) {
-                showMessageBox("danger", "信息更新失败")
+                showMessageBox("danger", "信息更新失败");
             } else {
-                showMessageBox("danger", "信息添加失败")
+                showMessageBox("danger", "信息添加失败");
             }
         }
     })
@@ -173,7 +174,10 @@ function addNode() {
  * 编辑记录 使文本框可编辑
  */
 function edit() {
-    setFormReadStatus(formName, false);
+
+    formReadOnly = !formReadOnly;
+    setFormReadStatus(formName, formReadOnly);
+
 }
 
 
@@ -256,11 +260,12 @@ function setFormReadStatus(formId, formLocked) {
         $(formId + " input ").attr("readonly", "readonly");
         $(formId + " textarea ").attr("readonly", "readonly");
         $(formId + " select").attr("disabled", "disabled");
+        $("#saveBtn").hide();
     } else {
         $(formId + " input").attr("readonly", "readonly").removeAttr("readonly");
         $(formId + " select").attr("disabled", "disabled").removeAttr("disabled");
         $(formId + " textarea").attr("readonly", "readonly").removeAttr("readonly");
-
+        $("#saveBtn").show();
     }
 }
 
