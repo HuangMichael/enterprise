@@ -1,7 +1,7 @@
 var listTab = $('#myTab li:eq(0) a');
 //数据列表
 var formTab = $('#myTab li:eq(1) a');
-
+pointer = 0;
 var validationConfig = {
     message: '该值无效',
     fields: {
