@@ -2,6 +2,7 @@
 var listTab = $('#myTab li:eq(0) a');
 //数据列表
 var formTab = $('#myTab li:eq(1) a');
+pointer = 0;
 var validationConfig = {
     message: '该值无效 ',
     fields: {
@@ -165,6 +166,16 @@ $(function () {
     dataTableName = "#eqAddBillDataTable";
     docName = "设备新置申请信息";
     formName = "#detailForm";
+
+
+    var searchVue = new Vue({
+        el: "#searchBox",
+        data: {
+            locs: locs,
+            eqClasses: eqClasses
+        }
+    });
+
     searchModel = [
         {"param": "beginDate", "paramDesc": "申请日期"},
         {"param": "endDate", "paramDesc": "申请日期"},
@@ -184,7 +195,7 @@ $(function () {
     vdm = new Vue({
         el: formName,
         data: {
-            eqAddBill: findById(selectedIds[pointer]),
+            eqAddBill: findById(selectedIds[0]),
             locs: locs,
             eqClasses: eqClasses
         }

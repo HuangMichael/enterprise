@@ -471,6 +471,8 @@ function findMyLoc() {
     var url_location = "/commonData/findMyLoc";
     $.getJSON(url_location, function (data) {
         locs = data;
+
+        console.log("locs--------------------" + JSON.stringify(data));
     });
     return locs;
 }
@@ -495,7 +497,7 @@ function findEqClass() {
     var url_eqclass = "/commonData/findEqClass";
     $.getJSON(url_eqclass, function (data) {
         eqClasses = data;
-        console.log("data--------------------" + JSON.stringify(data));
+        console.log("eqClass--------------------" + JSON.stringify(data));
     });
     return eqClasses;
 }

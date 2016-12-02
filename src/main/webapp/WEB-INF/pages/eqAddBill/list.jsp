@@ -77,8 +77,8 @@
                                                         required>
                                                     <option></option>
                                                     <template v-for="option in eqClasses">
-                                                        <option :value="option.cname">
-                                                            {{option.cname }}
+                                                        <option :value="option.id">
+                                                            {{option.description }}
                                                         </option>
                                                     </template>
                                                 </select>
