@@ -28,7 +28,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
- * Created by huangbin on 2015/12/23 0023.
+ * Created by huangbin on 2016/03/23 0023.
  * 位置控制器类
  */
 @Controller

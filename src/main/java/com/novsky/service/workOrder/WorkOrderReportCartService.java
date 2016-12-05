@@ -42,7 +42,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by huangbin on 2016/3/24.
+ * Created by huangbin on 2016/4/24.
  * 报修车业务类
  */
 @Service
@@ -216,18 +216,6 @@ public class WorkOrderReportCartService extends BaseService {
     }
 
 
-    /**
-     * @param location
-     * @param status
-     * @return 根据状态查询所有报修车信息
-     */
-    public List<WorkOrderReportCart> findByLocationsAndStatus(String location, String status) {
-        List<WorkOrderReportCart> workOrderReportCartList = null;
-        if (location != null) {
-            workOrderReportCartList = workOrderReportCartRepository.findByLocationStartingWithAndStatus(location, status);
-        }
-        return workOrderReportCartList;
-    }
 
 
     /**
@@ -244,30 +232,6 @@ public class WorkOrderReportCartService extends BaseService {
     }
 
 
-    /**
-     * @param orderDesc
-     * @param pageable
-     * @return 根据状态查询所有报修车信息
-     *//*
-    public Page<WorkOrderReportCart> findByOrderDescContainingAndReportType(String orderDesc, String reportType, Pageable pageable) {
-        Page<WorkOrderReportCart> workOrderReportCartList = null;
-        if (orderDesc != null) {
-            workOrderReportCartList = workOrderReportCartRepository.findByOrderDescContainingAndReportType(orderDesc, reportType, pageable);
-        }
-        return workOrderReportCartList;
-    }
-
-    *//**
-     * @param location
-     * @return 根据状态查询所有报修车信息
-     *//*
-    public List<WorkOrderReportCart> findByLocationStartingWith(String location) {
-        List<WorkOrderReportCart> workOrderReportCartList = null;
-        if (location != null) {
-            workOrderReportCartList = workOrderReportCartRepository.findByLocationStartingWith(location);
-        }
-        return workOrderReportCartList;
-    }*/
 
 
     /**
@@ -363,13 +327,6 @@ public class WorkOrderReportCartService extends BaseService {
     }
 
 
-    /**
-     * @param offset 月份偏移量
-     * @return 查询当月报修的设备分类的前5
-     */
-    public List<Object> findTopNReportCartByEqClass(int offset) {
-        return workOrderReportCartRepository.findTopNReportCartByEqClass(offset);
-    }
 
 
     /**
@@ -419,15 +376,6 @@ public class WorkOrderReportCartService extends BaseService {
     }
 
 
-    public List<VworkOrderReportBill> findByNodeState(String nodeState) {
-
-        return vworkOrderReportBillRepository.findByNodeState(nodeState);
-    }
-
-    public Page<VworkOrderReportBill> findByNodeState(String nodeState, Pageable pageable) {
-
-        return vworkOrderReportBillRepository.findByNodeState(nodeState, pageable);
-    }
 
 
     /**

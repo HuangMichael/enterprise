@@ -49,15 +49,24 @@ public interface LocationsRepository extends CrudRepository<Locations, Long> {
     @Query(value = "select l from Locations l where l.parent=:id order by l.location desc ")
     List<Locations> findByParentOrderByLocationDesc(@Param("id") Long id);
 
+    /**
+     * @param id
+     * @return
+     */
     List<Locations> findByParent(Long id);
 
-    /**
-     * 根据位置编码模糊查询
-     */
-    List<Locations> findByLocationLike(String location);
 
+    /**
+     * @param location 根据位置编号模糊查询
+     * @return
+     */
     List<Locations> findByLocationStartingWith(String location);
 
+    /**
+     * @param location
+     * @param status
+     * @return
+     */
     List<Locations> findByLocationStartingWithAndStatus(String location, String status);
 
     /**
@@ -65,13 +74,6 @@ public interface LocationsRepository extends CrudRepository<Locations, Long> {
      * @return 查询节点级别小于level的
      */
     List<Locations> findByLocLevelLessThan(Long level);
-
-
-    /**
-     * 根据位置编码模糊查询
-     */
-    List<Locations> findByLocation(String location);
-
 
     /**
      * @param locations 删除位置

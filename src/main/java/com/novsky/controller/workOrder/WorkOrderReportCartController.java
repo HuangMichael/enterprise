@@ -49,7 +49,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by huangbin on 2015/12/23 0023.
+ * Created by huangbin on 2016/4/23 0023.
  */
 @Controller
 @EnableAutoConfiguration
@@ -58,7 +58,6 @@ public class WorkOrderReportCartController extends BaseController {
 
     @Autowired
     WorkOrderReportCartService workOrderReportCartService;
-
     @Autowired
     LocationsService locationsService;
     @Autowired
@@ -148,21 +147,6 @@ public class WorkOrderReportCartController extends BaseController {
         modelMap.put("reportedList", reportedList);
         return "/location/locList";
     }
-
-
-   /* *//**
-     * @param lid
-     * @param modelMap
-     * @return 在加入报修车之前检查是否已有该设备报修未完成的维修任务 objectList
-     *//*
-    @RequestMapping(value = "/loadWorkOrderStep/{lid}", method = RequestMethod.GET)
-    public String loadWorkOrderStep(@PathVariable("lid") Long lid, ModelMap modelMap) {
-        Locations locations = locationsService.findById(lid);
-        List<VworkOrderStep> vworkOrderStepList = workOrderReportCartService.findByLocations(locations);
-        modelMap.put("vworkOrderStepList", vworkOrderStepList);
-        return "/location/locList";
-    }*/
-
 
     /**
      * @param locationId 位置id

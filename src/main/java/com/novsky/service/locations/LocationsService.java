@@ -92,13 +92,6 @@ public class LocationsService extends BaseService {
         return locationsRepository.findById(id);
     }
 
-    /**
-     * @param location
-     * @return
-     */
-    public List<Locations> findByLocation(String location) {
-        return locationsRepository.findByLocation(location);
-    }
 
 
     /**
