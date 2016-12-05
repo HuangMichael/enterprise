@@ -69,23 +69,13 @@ public class Equipments {
     private Locations locations;  //所属位置
 
 
-/*
-    @Transient
-    @ManyToOne(optional = true, fetch = FetchType.LAZY)
-    @JoinColumn(name = "vlocations_id", referencedColumnName = "id")
-    private Vlocations vlocations;  //所属位置*/
-
-
-    @ManyToOne(optional = true, fetch = FetchType.LAZY)
+    @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name = "equipments_Classification_id", referencedColumnName = "id")
     private EquipmentsClassification equipmentsClassification; //设备分类
 
 
     @Column(length = 1, columnDefinition = "default 1")
     private String status; //默认为正常  0不正常 1正常  2报修   3报废
-
-   /* @Column(length = 20)
-    private String location; //加入冗余字段location 方便模糊查询*/
 
 
     @Column(length = 20)
