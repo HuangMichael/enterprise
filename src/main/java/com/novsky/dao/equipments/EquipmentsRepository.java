@@ -22,24 +22,24 @@ import java.util.List;
  */
 public interface EquipmentsRepository extends CrudRepository<Equipments, Long> {
     /**
-     * 查询所有设备类别
+     * 查询所有设备
      */
     List<Equipments> findAll();
 
 
     /**
-     * 查询所有设备类别
+     * 查询所有设备
      */
     Page<Equipments> findAll(Pageable pageable);
 
 
     /**
-     * 查询所有设备类别
+     * 删除设备信息
      */
     void delete(Equipments equipments);
 
     /**
-     * 根据状态查询设备类别
+     * 根据状态查询设备
      */
     List<Equipments> findByStatus(String status);
 
@@ -55,18 +55,12 @@ public interface EquipmentsRepository extends CrudRepository<Equipments, Long> {
      */
     List<Equipments> findByEqCode(String eqCode);
 
-    /**
-     * 根据位置信息查询设备
-     */
-    List<Equipments> findByLocations(Locations locations);
-
 
     /**
      * @param equipments 保存设备信息
      * @return
      */
     Equipments save(Equipments equipments);
-
 
 
     /**
@@ -84,13 +78,6 @@ public interface EquipmentsRepository extends CrudRepository<Equipments, Long> {
     List<Object> findFixingStepByEid(@Param("eid") Long eid);
 
 
-    /**
-     * @param eid 设备id
-     * @return 根据设备id查询维修过程的所有节点
-     */
-    @Query(nativeQuery = true, value = "SELECT  v0.report_time, v0.s, v0.status FROM v_work_order_step v0 WHERE v0.equipments_id = :eid ORDER BY v0.report_time  limit 4  ")
-    List<Object> findFixStepsByEid(@Param("eid") Long eid);
-
     @Query(nativeQuery = true, value = "SELECT   date_format(v0.report_Time,'%Y-%m-%d %H:%i:%s'), v0.flow_desc,v0.order_Desc,v0.fix_Desc FROM v_work_order_step v0 WHERE v0.equipments_id = :eid ORDER BY v0.report_time")
     List<Object> findFixHistoryByEid(@Param("eid") Long eid);
 
@@ -98,16 +85,8 @@ public interface EquipmentsRepository extends CrudRepository<Equipments, Long> {
     List<Object> findLastFixHistoryByEid(@Param("eid") Long eid);
 
 
-    @Query(nativeQuery = true, value = "SELECT  v0.order_line_no, v0.flow_desc, v0.status,date_format(v0.report_Time,'%Y-%m-%d %H:%i:%s') ,v0.order_Desc,max(v0.fix_Desc) as fix_Desc FROM v_work_order_step v0 WHERE v0.order_line_no = :orderLineNo ORDER BY v0.report_time desc limit 1")
-    List<Object> findFixStepsByOrderLineNo(@Param("orderLineNo") String orderLineNo);
-
-
     @Query(nativeQuery = true, value = "SELECT h.node_desc AS flow_desc,date_format(h.node_time,'%Y-%m-%d %H:%i:%s') ,c.order_desc,c.fix_desc FROM t_work_order_history h LEFT JOIN t_work_order_report_cart c ON h.order_id = c.id WHERE c.order_Line_No =:orderLineNo ORDER BY h.node_time")
     List<Object> findAllFixStepsByOrderLineNo(@Param("orderLineNo") String orderLineNo);
-
-
-    @Query(nativeQuery = true, value = "SELECT  v0.order_line_no, v0.flow_desc, v0.status,date_format(v0.report_Time,'%Y-%m-%d %H:%i:%s') ,v0.order_Desc,max(v0.fix_Desc) as fix_Desc FROM v_work_order_step v0 WHERE v0.equipments_id = :eid GROUP BY v0.order_line_no ORDER BY v0.report_time desc")
-    List<Object> findAllFixStepsByEid(@Param("eid") Long eid);
 
 
     @Query(nativeQuery = true, value = "select v.order_line_no,v.fix_desc as aaa,date_format(v.report_time,'%Y-%m-%d %H:%i:%s') ,v.fix_desc,v.node_state  from v_work_order_last_status v where v.equipments_id =:eid")

@@ -62,7 +62,6 @@ public class EquipmentAccountService extends BaseService {
      */
     @Transactional
     public Equipments save(Equipments equipments) {
-        // equipments = updateLocation(equipments);
         equipments = equipmentsRepository.save(equipments);
         return equipments;
     }
@@ -112,30 +111,12 @@ public class EquipmentAccountService extends BaseService {
 
 
     /**
-     * @param location
-     * @return 查询位置下的设备信息
-     */
-    public List<Equipments> findByLocation(Locations location) {
-
-        log.info("-------------------按照位置查询设备");
-        return equipmentsRepository.findByLocations(location);
-    }
-
-
-    /**
      * @param id 根据id删除设备信息
      */
     public void delete(Long id) {
         equipmentsRepository.delete(id);
     }
 
-
-    /**
-     * @return 查询所有的外委单位
-     */
-    public List<Units> findAllUnit() {
-        return outsourcingUnitRepository.findByStatus(CommonStatusType.STATUS_YES);
-    }
 
 
     /**
@@ -147,22 +128,7 @@ public class EquipmentAccountService extends BaseService {
     }
 
 
-    /**
-     * @param eid 根据设备id查询维修过程的所有节点
-     * @return
-     */
-    public List<Object> findFixStepsByEid(Long eid) {
-        return equipmentsRepository.findFixStepsByEid(eid);
-    }
 
-
-    /**
-     * @param orderLineNo 跟踪号
-     * @return 根据跟踪号查询节点信息
-     */
-    public List<Object> findFixStepsByOrderLineNo(String orderLineNo) {
-        return equipmentsRepository.findFixStepsByOrderLineNo(orderLineNo);
-    }
 
     public List<Object> findFixHistoryByEid(Long eid) {
         return equipmentsRepository.findFixHistoryByEid(eid);
@@ -218,56 +184,10 @@ public class EquipmentAccountService extends BaseService {
 
     }
 
-    /**
-     * @param eqName   设备名称
-     * @param pageable
-     * @return 分页查询 根据易耗品名称去查询
-     */
-    public Page<Vequipments> findByEqNameContains(String eqName, Pageable pageable) {
-
-        return vEqRepository.findByEqNameContains(eqName, pageable);
-    }
-
 
     /**
-     * @param eqName   设备名称
-     * @param pageable
-     * @return 分页查询 根据易耗品名称去查询
+     * @return 查询所有id
      */
-    public Page<Vequipments> findByEqNameContainsAndLocationId(String eqName, Long locationId, Pageable pageable) {
-
-        Locations locations = locationsService.findById(locationId);
-
-        return vEqRepository.findByEqNameContainsAndLocation(eqName, locations, pageable);
-    }
-
-
-    /**
-     * @param searchPhrase 查询字符串数组
-     * @param pageable
-     * @return 分页查询 根据易耗品名称去查询
-     */
-    public Page<Vequipments> findByComplex(String searchPhrase, Pageable pageable) {
-        String eqName = "", eqClass = "", locName = "";
-        if (searchPhrase != null && !searchPhrase.equals("")) {
-            String searchParams[] = searchPhrase.split(",");
-            eqName = searchParams[0];
-            eqClass = searchParams[1];
-            locName = searchParams[2];
-        }
-        return vEqRepository.findByEqNameContainsAndLocNameContainsAndEqClassContains(eqName, locName, eqClass, pageable);
-    }
-
-
-    /**
-     * @param eqName 设备名称
-     * @return 分页查询 根据易耗品名称去查询
-     */
-    public List<Vequipments> findByEqNameContains(String eqName) {
-
-        return vEqRepository.findByEqNameContains(eqName);
-    }
-
     public List<Long> selectAllId() {
 
         return equipmentsRepository.findAllId();

@@ -204,7 +204,6 @@ $(function () {
 
 function showFixHistory() {
     var eid = selectedIds[pointer];
-    console.log("eid-------------" + eid);
     var histories = loadFixHistoryByEid(eid);
     rm.$set("e", vdm.equipment);
     rm.$set("e.location.description", vdm.equipment.location.description);
@@ -214,7 +213,6 @@ function showFixHistory() {
 
 function showUpdateRecords(eid) {
     var eid = selectedIds[pointer];
-    console.log("eid-------------" + eid);
     var records = loadUpdateHistoryByEid(eid);
     rm.$set("e", vdm.equipment);
     rm.$set("e.location.description", vdm.equipment.location.description);

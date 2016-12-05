@@ -56,7 +56,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by huangbin on 2015/12/23 0023.
+ * Created by huangbin on 2016/03/11 0023.
  * 设备台账控制器类
  */
 @Controller
