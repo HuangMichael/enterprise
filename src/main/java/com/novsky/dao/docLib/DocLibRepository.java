@@ -4,6 +4,8 @@ import com.novsky.domain.docLib.DocLib;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
+import java.util.List;
+
 /**
  * Created by huangbin on 2016/12/8.
  * 文档库接口类
@@ -29,4 +31,10 @@ public interface DocLibRepository extends CrudRepository<DocLib, Long>, PagingAn
      * 根据id删除文档库对象
      */
     void delete(Long id);
+
+    /**
+     * @return 查询所有的文档库
+     */
+    @Override
+    List<DocLib> findAll();
 }

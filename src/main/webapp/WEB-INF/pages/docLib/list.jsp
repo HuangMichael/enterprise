@@ -43,4 +43,4 @@
         </div>
     </div>
 </div>
-<script src="/js/app/resource/resource.js"></script>
+<script src="/js/app/docLib/docLib.js"></script>

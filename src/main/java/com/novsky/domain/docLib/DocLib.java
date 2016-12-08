@@ -12,6 +12,7 @@ import javax.persistence.*;
  * @author
  * @create 2016-12-08 15:08
  **/
+@Entity
 @Table(name = "T_DOC_LIB")
 @Data
 public class DocLib {
