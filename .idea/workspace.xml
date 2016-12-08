@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80da2167-c0c3-4f4e-b07a-b0e671f03e0e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/form.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/subList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/controller/docLib/DocLibController.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/controller/docLib/DocLibController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/dao/docLib/DocLibRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/dao/docLib/DocLibRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/domain/docLib/DocLib.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/domain/docLib/DocLib.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/service/docLib/DocLibService.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/service/docLib/DocLibService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" />
     </list>
     <ignored path="subway.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,11 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DocLib.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DocLib.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/docLib/DocLib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="238">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,11 +94,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docLib.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="subList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/subList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/form.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docLib.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1526">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="302">
+              <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common-crud.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="594" column="17" selection-start-line="594" selection-start-column="9" selection-end-line="594" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -125,63 +176,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocLibRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/dao/docLib/DocLibRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DocLibController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/docLib/DocLibController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="501">
               <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="195" column="5" selection-start-line="186" selection-start-column="0" selection-end-line="195" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentsRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/app/BaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/app/resoure/Resource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -231,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/dao/equipments/EquipmentsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/dao/equipments/VequipmentsRepository.java" />
@@ -248,7 +246,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/domain/locations/Locations.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/station/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/linkbit/beidou/domain/equipments/VeqClass.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/equipment/form.jsp" />
@@ -258,7 +255,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/equipment/table_1_3.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/app/units/units.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/app/ecbudget/ecbudget.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/eqAddBill/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/eqAddBill/form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/app/eqAddBill/eqAddBill.js" />
@@ -275,13 +271,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/workOrder/WorkOrderReportCartController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/workOrder/WorkOrderReportCartService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/dao/docLib/DocLibRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/docLib/DocLibService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/docLib/DocLibController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/docLib/DocLib.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js" />
       </list>
     </option>
   </component>
@@ -503,6 +502,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enterprise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enterprise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enterprise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enterprise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="docLib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -611,7 +678,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="EQ&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/equipment/EquipmentController.java&#10;doclIBc&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/docLib/DocLibController.java&#10;repo&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java&#10;res&#9;PSI&#9;JAVA://com.novsky.domain.app.resoure.Resource&#10;applica&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;equip&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/equipment/EquipmentController.java&#10;app&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;user&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/user/user.js&#10;eqadd&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/eqAddBill/eqAddBill.js&#10;UNITS&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/units/units.js&#10;unitsC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.units.UnitsController&#10;equipmentC&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;eq&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipment/equipments.js&#10;login&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/app/LoginController.java&#10;VeqClass&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.VeqClassRepository&#10;veqc&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.equipments.VeqClass&#10;crud&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;EquipmentsClassificationController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentsClassificationController.java&#10;locationCon&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;common-head&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-head.jsp&#10;theme&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/bootstrap-dist/css/bootstrap-theme.min.css&#10;line&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.line.Line&#10;LocationsService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;locations&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.locations.Locations&#10;PreMaintRepository&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;equipmentsRe&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.EquipmentsRepository&#10;CommonDataService &#9;PSI&#9;JAVA://com.linkbit.beidou.service.commonData.CommonDataService&#10;addBillser&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EqAddBillService.java&#10;equi&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;EquipmentAccountService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EquipmentAccountService.java&#10;PreMaintController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/preMaint/PreMaintController.java&#10;preS&#9;PSI&#9;JAVA://com.linkbit.beidou.service.preMaint.PreMaintSearchService&#10;PREMAIN&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;location&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;budget&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/budget/budget.js&#10;CommonDa&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/common/CommonDataController.java&#10;locationS&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;equipment&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EquipmentsClassificationController&#10;equpdate&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/eqUpdateBill/eqUpdateBill.js&#10;ec&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/ecbudget/ecbudget.js&#10;bud&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/budget/budget.js&#10;LOCA&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.locations.LocationController&#10;location.js&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/locations/location.js&#10;commonDataC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.common.CommonDataController&#10;PREMAINT&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.preMaint.PreMaintController&#10;pre&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/preMaint/preMaint.js&#10;equpdateC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqUpdateBillController&#10;eqAddC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqAddBillController&#10;budgetC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.budget.BudgetController&#10;role&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/role/role.js" />
+    <property name="SearchEverywhereHistoryKey" value="crud&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;location&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/locations/location.js&#10;EQ&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/equipment/EquipmentController.java&#10;doclIBc&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/docLib/DocLibController.java&#10;repo&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java&#10;res&#9;PSI&#9;JAVA://com.novsky.domain.app.resoure.Resource&#10;applica&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;equip&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/equipment/EquipmentController.java&#10;app&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;user&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/user/user.js&#10;eqadd&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/eqAddBill/eqAddBill.js&#10;UNITS&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/units/units.js&#10;unitsC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.units.UnitsController&#10;equipmentC&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;eq&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipment/equipments.js&#10;login&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/app/LoginController.java&#10;VeqClass&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.VeqClassRepository&#10;veqc&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.equipments.VeqClass&#10;EquipmentsClassificationController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentsClassificationController.java&#10;locationCon&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/locations/LocationController.java&#10;common-head&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-head.jsp&#10;theme&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/bootstrap-dist/css/bootstrap-theme.min.css&#10;line&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.line.Line&#10;LocationsService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;locations&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.locations.Locations&#10;PreMaintRepository&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;equipmentsRe&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.EquipmentsRepository&#10;CommonDataService &#9;PSI&#9;JAVA://com.linkbit.beidou.service.commonData.CommonDataService&#10;addBillser&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EqAddBillService.java&#10;equi&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;EquipmentAccountService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/equipments/EquipmentAccountService.java&#10;PreMaintController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/preMaint/PreMaintController.java&#10;preS&#9;PSI&#9;JAVA://com.linkbit.beidou.service.preMaint.PreMaintSearchService&#10;PREMAIN&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/dao/preMaint/PreMaintRepository.java&#10;budget&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/budget/budget.js&#10;CommonDa&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/common/CommonDataController.java&#10;locationS&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/service/locations/LocationsService.java&#10;equipment&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EquipmentsClassificationController&#10;equpdate&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/eqUpdateBill/eqUpdateBill.js&#10;ec&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/ecbudget/ecbudget.js&#10;bud&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/budget/budget.js&#10;LOCA&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.locations.LocationController&#10;location.js&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/locations/location.js&#10;commonDataC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.common.CommonDataController&#10;PREMAINT&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.preMaint.PreMaintController&#10;pre&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/preMaint/preMaint.js&#10;equpdateC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqUpdateBillController&#10;eqAddC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.equipment.EqAddBillController&#10;budgetC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.budget.BudgetController&#10;role&#9;FILE&#9;file://E:/dev/novsky/src/main/webapp/js/app/role/role.js" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="186" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="210" />
@@ -647,8 +714,8 @@
       <recent name="com.linkbit.beidou.utils.search" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\dev\enterprise\src\main\webapp\js\app\docLib" />
       <recent name="E:\dev\enterprise\src\main\webapp\WEB-INF\pages\docLib" />
+      <recent name="E:\dev\enterprise\src\main\webapp\js\app\docLib" />
       <recent name="E:\dev\enterprise\src\main\webapp\img\login" />
       <recent name="E:\dev\enterprise\src\main\webapp\img\portal" />
       <recent name="E:\dev\enterprise\src\main\webapp\img\avatars" />
@@ -1507,7 +1574,7 @@
       <workItem from="1481012833546" duration="1612000" />
       <workItem from="1481168855355" duration="204000" />
       <workItem from="1481178517829" duration="1265000" />
-      <workItem from="1481180490269" duration="2662000" />
+      <workItem from="1481180490269" duration="4608000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1471500329538</created>
@@ -1849,7 +1916,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1731834000" />
+    <option name="totallyTimeSpent" value="1733780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1874,7 +1941,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43109152" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5117057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14409535" sideWeight="0.9107527" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010834237" sideWeight="0.9107527" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.8971774" order="0" side_tool="false" content_ui="combo" />
@@ -1987,20 +2054,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/app/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="111" column="66" selection-start-line="111" selection-start-column="66" selection-end-line="111" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="195" column="55" selection-start-line="195" selection-start-column="55" selection-end-line="195" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/dao/equipments/VeqClassRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -2096,13 +2149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="50" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="583" column="56" selection-start-line="583" selection-start-column="56" selection-end-line="583" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -2204,13 +2250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/workOrder/WorkOrderReportCartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -2243,14 +2282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2347,21 +2378,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/common/common-crud.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1526">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="792">
+          <caret line="594" column="17" selection-start-line="594" selection-start-column="9" selection-end-line="594" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/docLib/DocLib.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="238">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/subList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/docLib/docLib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

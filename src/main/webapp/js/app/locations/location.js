@@ -315,15 +315,7 @@ function afterClick(id) {
     loadEqList(id);
 }
 
-/**
- *
- * @param id 同步选中数据
- */
-function fillForm(id) {
-    var location = findById(id);
-    vdm.$set(mainObject, location);
-    setFormReadStatus(formName, true);
-}
+
 
 
 /**

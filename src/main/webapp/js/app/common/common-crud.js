@@ -586,3 +586,14 @@ $(function () {
     })
 
 });
+
+
+/**
+ *点击树节点显示明细
+ * @param id
+ */
+function fillForm(id) {
+    var object = findById(id);
+    vdm.$set(mainObject, object);
+    setFormReadStatus(formName, true);
+}

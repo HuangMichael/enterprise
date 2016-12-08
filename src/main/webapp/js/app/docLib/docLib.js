@@ -1,5 +1,9 @@
 var zTree;
 var demoIframe;
+
+formName = "#detailForm";
+mainObject = "docLib";
+var shown = true;
 var setting = {
     check: {
         enable: false
@@ -19,8 +23,9 @@ var setting = {
     },
     callback: {
         onClick: function (event, treeId, treeNode, clickFlag) {
-            /*var url = "/docLib/detail/" + treeNode.id;
-            $("#contentDiv").load(url);*/
+
+            console.log("show id ---" + treeNode.id);
+            fillForm(treeNode.id);
             return true;
         }
     }
@@ -65,6 +70,14 @@ $(document).ready(function () {
         if (h < 530) h = 530;
         demoIframe.height(h);
     }
+
+
+    vdm = new Vue({
+        el: formName,
+        docLib: findById(1)
+
+
+    });
 });
 
 var flag = false;
@@ -84,9 +97,11 @@ function add() {
 }
 
 
+/**
+ * 编辑
+ */
 function edit() {
-
-
+    setFormReadStatus(formName, shown);
 }
 
 
