@@ -86,31 +86,24 @@ public class CommonDataController extends BaseController {
     }
 
     /**
-     * @param httpSession 当前会话
      * @return 查询分类
      */
     @RequestMapping(value = "/findEqClass", method = RequestMethod.GET)
     @ResponseBody
-    public List<EquipmentsClassification> findEquipmentsClassifications(HttpSession httpSession) {
-        List<EquipmentsClassification> equipmentsClassificationList = null;
-        if (httpSession != null) {
-            equipmentsClassificationList = commonDataService.findEquipmentsClassification(httpSession);
-        }
+    public List<EquipmentsClassification> findEquipmentsClassifications() {
+        List<EquipmentsClassification> equipmentsClassificationList = commonDataService.findEquipmentsClassification();
+
         return equipmentsClassificationList;
     }
 
 
     /**
-     * @param httpSession 当前会话
      * @return 查询分类视图信息
      */
     @RequestMapping(value = "/findVEqClass", method = RequestMethod.GET)
     @ResponseBody
-    public List<VeqClass> findVeqClass(HttpSession httpSession) {
-        List<VeqClass> veqClassList = null;
-        if (httpSession != null) {
-            veqClassList = commonDataService.findVeqClass(httpSession);
-        }
+    public List<VeqClass> findVeqClass() {
+        List<VeqClass> veqClassList = commonDataService.findVeqClass();
         return veqClassList;
     }
 

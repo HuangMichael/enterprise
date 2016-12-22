@@ -10,6 +10,8 @@ import com.novsky.domain.units.Units;
 import com.novsky.service.app.BaseService;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -19,10 +21,10 @@ import java.util.List;
  * Created by huangbin on 2016/3/24.
  */
 @Service
+@Cacheable(value = "eqClassCache")
 public class EquipmentsClassificationService extends BaseService {
 
     @Autowired
-    @Getter
     EquipmentsClassificationRepository equipmentsClassificationRepository;
 
     /**
@@ -61,6 +63,7 @@ public class EquipmentsClassificationService extends BaseService {
      *
      * @return
      */
+    @Cacheable(value = "eqClasses", key = "'eqClasses'")
     public List<EquipmentsClassification> findAll() {
         List<EquipmentsClassification> equipmentsClassificationList = equipmentsClassificationRepository.findAll();
         return equipmentsClassificationList;
@@ -69,6 +72,7 @@ public class EquipmentsClassificationService extends BaseService {
     /**
      * 保存设备分类
      */
+    @CacheEvict(value = "eqClass", key = "'eqClass'+#p0.id", allEntries = true)
     public EquipmentsClassification save(EquipmentsClassification equipmentsClassification) {
         return equipmentsClassificationRepository.save(equipmentsClassification);
     }
@@ -90,6 +94,10 @@ public class EquipmentsClassificationService extends BaseService {
     }
 
 
+    /**
+     * @param cid
+     * @return 查询外委单位对应的设备分类
+     */
     public List<Long> getUnitsByEqClassId(Long cid) {
         EquipmentsClassification equipmentsClassification;
         List<Long> idList = new ArrayList<Long>();

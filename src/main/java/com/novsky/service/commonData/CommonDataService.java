@@ -121,7 +121,7 @@ public class CommonDataService extends BaseService {
 
 
     /**
-     * @param location    位置编号
+     * @param location 位置编号
      * @return 查询我的下属位置信息
      * 先从session中找  如果失败再做查询
      */
@@ -156,22 +156,11 @@ public class CommonDataService extends BaseService {
 
 
     /**
-     * @param httpSession
      * @return 查询设备种类信息
      */
-    public List<EquipmentsClassification> findEquipmentsClassification(HttpSession httpSession) {
-        List<EquipmentsClassification> equipmentsClassificationList = null;
-        Object object = httpSession.getAttribute("equipmentsClassificationList");
-        if (object != null) {
-            equipmentsClassificationList = (ArrayList<EquipmentsClassification>) object;
-            log.info(this.getClass().getCanonicalName() + "------------从缓存中查询设备种类");
-
-        } else {
-            equipmentsClassificationList = equipmentsClassificationRepository.findAll();
-            log.info(this.getClass().getCanonicalName() + "------------从数据库中查询设备种类");
-            httpSession.setAttribute("equipmentsClassificationList", equipmentsClassificationList);
-            log.info(this.getClass().getCanonicalName() + "------------设备种类放入缓存");
-        }
+    @Cacheable(key = "'myEqClasses'", value = "myEqClasses")
+    public List<EquipmentsClassification> findEquipmentsClassification() {
+        List<EquipmentsClassification> equipmentsClassificationList = equipmentsClassificationRepository.findAll();
         return equipmentsClassificationList;
 
 
@@ -179,24 +168,13 @@ public class CommonDataService extends BaseService {
 
 
     /**
-     * @param httpSession
      * @return 查询设备种类信息
      */
-    public List<VeqClass> findVeqClass(HttpSession httpSession) {
-        List<VeqClass> eqClassList;
-        Object object = httpSession.getAttribute("eqClassList");
-        if (object != null) {
-            eqClassList = (ArrayList<VeqClass>) object;
-            log.info(this.getClass().getCanonicalName() + "------------从缓存中查询设备种类视图");
-        } else {
-            eqClassList = veqClassRepository.findAll();
-            log.info(this.getClass().getCanonicalName() + "------------从数据库中查询设备种类视图");
-            httpSession.setAttribute("eqClassList", eqClassList);
-            log.info(this.getClass().getCanonicalName() + "------------设备种类视图放入缓存");
-        }
+    @Cacheable(key = "'myVEqClasses'", value = "myVEqClasses")
+    public List<VeqClass> findVeqClass() {
+        List<VeqClass> eqClassList = veqClassRepository.findAll();
+        log.info(this.getClass().getCanonicalName() + "------------从数据库中查询设备种类视图");
         return eqClassList;
-
-
     }
 
 

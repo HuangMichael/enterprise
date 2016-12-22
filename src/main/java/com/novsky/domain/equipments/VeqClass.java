@@ -4,6 +4,7 @@ package com.novsky.domain.equipments;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by huangbin on 2016/03/14 0023.
@@ -12,11 +13,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "V_EQ_CLASS")
 @Data
-@Setter
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class VeqClass {
+public class VeqClass implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

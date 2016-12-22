@@ -15,6 +15,8 @@ import com.novsky.service.equipmentsClassification.EquipmentsClassificationServi
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -116,6 +118,7 @@ public class EquipmentsClassificationController extends BaseController {
      */
     @RequestMapping(value = "/save", method = {RequestMethod.POST})
     @ResponseBody
+    @CacheEvict(value = "eqClass", key = "'eqClass'+#p0.id", allEntries = true)
     public EquipmentsClassification save(@RequestParam("lid") Long lid,
                                          @RequestParam("description") String description,
                                          @RequestParam("parentId") Long parentId,
@@ -153,6 +156,7 @@ public class EquipmentsClassificationController extends BaseController {
      */
     @RequestMapping(value = "/findAll")
     @ResponseBody
+    @Cacheable(value = "eqClasses", key = "'eqClasses'")
     public List<EquipmentsClassification> findAll() {
         List<EquipmentsClassification> equipmentClassificationList = equipmentsClassificationRepository.findAll();
         return equipmentClassificationList;
