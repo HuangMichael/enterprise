@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80da2167-c0c3-4f4e-b07a-b0e671f03e0e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/controller/common/CommonDataController.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/controller/common/CommonDataController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentsClassificationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentsClassificationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/EquipmentsClassification.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/EquipmentsClassification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/VeqClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/VeqClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java" afterPath="$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="subway.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,64 +81,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java">
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/person/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1569">
-              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EquipmentsClassificationService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java">
+      <file leaf-file-name="PersonService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="80" column="15" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
-              <folding>
-                <element signature="e#2699#2700#0" expanded="true" />
-                <element signature="e#2769#2770#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="equipmentsClassification.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/equipmentsClassification/equipmentsClassification.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state relative-caret-position="484">
+              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EquipmentsClassificationController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentsClassificationController.java">
+      <file leaf-file-name="CacheConfig.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE-sources.jar!/org/springframework/cache/annotation/CacheConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="120" column="78" selection-start-line="120" selection-start-column="78" selection-end-line="120" selection-end-column="78" />
+            <state relative-caret-position="425">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EquipmentsClassification.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/EquipmentsClassification.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+            <state relative-caret-position="85">
+              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VeqClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/VeqClass.java">
+      <file leaf-file-name="LocationsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="-1173">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -147,45 +134,49 @@
       <file leaf-file-name="CommonDataService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+            <state relative-caret-position="1428">
+              <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EquipmentsRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java">
+      <file leaf-file-name="location.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonDataController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/common/CommonDataController.java">
+      <file leaf-file-name="BudgetController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/budget/BudgetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/portal/portal.js">
+      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3985">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding>
-                <marker date="1478240458000" expanded="true" signature="2433:2447" ph="..." />
-                <marker date="1478240458000" expanded="true" signature="2515:2534" ph="..." />
-                <marker date="1478240458000" expanded="true" signature="6720:6734" ph="..." />
-                <marker date="1478240458000" expanded="true" signature="6805:6835" ph="..." />
-                <marker date="1478240458000" expanded="true" signature="6885:6894" ph="..." />
-              </folding>
+            <state relative-caret-position="362">
+              <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/app/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -243,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/equipments/EquipmentAccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/app/equipment/equipments.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/dao/locations/LocationsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/location/form.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/workOrder/WorkOrderReportCartController.java" />
@@ -268,23 +258,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/user/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/utils/cache/RedisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/app/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/person/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/locations/Locations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/locations/Vlocations.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/app/resoure/VRoleAuthView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/app/ResourceService.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/EquipmentsClassification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/domain/equipments/VeqClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/common/CommonDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentsClassificationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java" />
       </list>
     </option>
   </component>
@@ -383,7 +374,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enterprise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Production" />
         <subPane subId="Changed Files">
@@ -426,25 +429,13 @@
         </subPane>
         <subPane subId="Default" />
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enterprise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="equipmentsClassificationC&#9;PSI&#9;JAVA://com.novsky.controller.equipment.EquipmentsClassificationController&#10;equiclass&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipmentsClassification/equipmentsClassification.js&#10;EquipmentsClassificationService&#9;PSI&#9;JAVA://com.novsky.service.equipmentsClassification.EquipmentsClassificationService&#10;equipmentsClassificationService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java&#10;CommonDataController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/common/CommonDataController.java&#10;EquipmentsRepository&#9;PSI&#9;JAVA://com.novsky.dao.equipments.EquipmentsRepository&#10;common&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/commonData/CommonDataService.java&#10;Veq&#9;PSI&#9;JAVA://com.novsky.domain.equipments.VeqClass&#10;eqc&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java&#10;portal&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/portal/portal.js&#10;porta&#9;PSI&#9;JAVA://com.novsky.controller.portal.PortalController&#10;vAU&#9;PSI&#9;JAVA://com.novsky.domain.app.resoure.VRoleAuthView&#10;pom&#9;FILE&#9;file://E:/dev/enterprise/pom.xml&#10;Vl&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/locations/Vlocations.java&#10;loca&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/locations/LocationController.java&#10;user&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/user/User.java&#10;locationC&#9;PSI&#9;JAVA://com.novsky.controller.locations.LocationController&#10;login&#9;PSI&#9;JAVA://com.novsky.controller.app.LoginController&#10;person&#9;PSI&#9;JAVA://com.novsky.service.person.PersonService&#10;commonC&#9;PSI&#9;JAVA://com.novsky.controller.common.CommonDataController&#10;redis&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/utils/cache/RedisCacheConfig.java&#10;user.js&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/user/user.js&#10;USERSER&#9;PSI&#9;JAVA://com.novsky.service.user.UserService&#10;USER&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/user/User.java&#10;common-head&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-head.jsp&#10;common-foot&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-foot.jsp&#10;cr&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;app&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;equi&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/equipments/Equipments.java&#10;commonDa&#9;PSI&#9;JAVA://com.novsky.controller.common.CommonDataController&#10;equipment&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java&#10;applica&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;Common&#9;PSI&#9;JAVA://com.novsky.service.commonData.CommonDataService&#10;return&#9;PSI&#9;JAVA://com.novsky.object.ReturnObject&#10;doc&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/docLib/docLib.js&#10;equip&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/equipments/Equipments.java&#10;crud&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;location&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/locations/location.js&#10;EQ&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/equipment/EquipmentController.java&#10;doclIBc&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/docLib/DocLibController.java&#10;repo&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java&#10;res&#9;PSI&#9;JAVA://com.novsky.domain.app.resoure.Resource&#10;eqadd&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/eqAddBill/eqAddBill.js&#10;UNITS&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/units/units.js&#10;unitsC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.units.UnitsController&#10;equipmentC&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;eq&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipment/equipments.js&#10;VeqClass&#9;PSI&#9;JAVA://com.linkbit.beidou.dao.equipments.VeqClassRepository&#10;veqc&#9;PSI&#9;JAVA://com.linkbit.beidou.domain.equipments.VeqClass&#10;EquipmentsClassificationController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentsClassificationController.java" />
+    <property name="SearchEverywhereHistoryKey" value="login&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/app/LoginController.java&#10;locationC&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/locations/LocationController.java&#10;budge&#9;PSI&#9;JAVA://com.novsky.controller.budget.BudgetController&#10;location.js&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/locations/location.js&#10;com&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/commonData/CommonDataService.java&#10;location&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/locations/LocationsService.java&#10;applica&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;person&#9;PSI&#9;JAVA://com.novsky.service.person.PersonService&#10;equipmentsClassificationC&#9;PSI&#9;JAVA://com.novsky.controller.equipment.EquipmentsClassificationController&#10;equiclass&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipmentsClassification/equipmentsClassification.js&#10;EquipmentsClassificationService&#9;PSI&#9;JAVA://com.novsky.service.equipmentsClassification.EquipmentsClassificationService&#10;equipmentsClassificationService&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java&#10;CommonDataController&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/common/CommonDataController.java&#10;EquipmentsRepository&#9;PSI&#9;JAVA://com.novsky.dao.equipments.EquipmentsRepository&#10;common&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/commonData/CommonDataService.java&#10;Veq&#9;PSI&#9;JAVA://com.novsky.domain.equipments.VeqClass&#10;eqc&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java&#10;portal&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/portal/portal.js&#10;porta&#9;PSI&#9;JAVA://com.novsky.controller.portal.PortalController&#10;vAU&#9;PSI&#9;JAVA://com.novsky.domain.app.resoure.VRoleAuthView&#10;pom&#9;FILE&#9;file://E:/dev/enterprise/pom.xml&#10;Vl&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/locations/Vlocations.java&#10;loca&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/locations/LocationController.java&#10;user&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/user/User.java&#10;commonC&#9;PSI&#9;JAVA://com.novsky.controller.common.CommonDataController&#10;redis&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/utils/cache/RedisCacheConfig.java&#10;user.js&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/user/user.js&#10;USERSER&#9;PSI&#9;JAVA://com.novsky.service.user.UserService&#10;USER&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/user/User.java&#10;common-head&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-head.jsp&#10;common-foot&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/WEB-INF/pages/common/common-foot.jsp&#10;cr&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;app&#9;FILE&#9;file://E:/dev/enterprise/src/main/resources/application.properties&#10;equi&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/equipments/Equipments.java&#10;commonDa&#9;PSI&#9;JAVA://com.novsky.controller.common.CommonDataController&#10;equipment&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/service/equipmentsClassification/EquipmentsClassificationService.java&#10;Common&#9;PSI&#9;JAVA://com.novsky.service.commonData.CommonDataService&#10;return&#9;PSI&#9;JAVA://com.novsky.object.ReturnObject&#10;doc&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/docLib/docLib.js&#10;equip&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/domain/equipments/Equipments.java&#10;crud&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/common/common-crud.js&#10;EQ&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/equipment/EquipmentController.java&#10;doclIBc&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/controller/docLib/DocLibController.java&#10;repo&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java&#10;res&#9;PSI&#9;JAVA://com.novsky.domain.app.resoure.Resource&#10;eqadd&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/eqAddBill/eqAddBill.js&#10;UNITS&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/units/units.js&#10;unitsC&#9;PSI&#9;JAVA://com.linkbit.beidou.controller.units.UnitsController&#10;equipmentC&#9;FILE&#9;file://E:/dev/enterprise/src/main/java/com/linkbit/beidou/controller/equipment/EquipmentController.java&#10;eq&#9;FILE&#9;file://E:/dev/enterprise/src/main/webapp/js/app/equipment/equipments.js" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="186" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="210" />
@@ -466,7 +457,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.27281746" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../novsky" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../subway" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1340,7 +1331,9 @@
       <workItem from="1481849599921" duration="169000" />
       <workItem from="1482286642392" duration="2293000" />
       <workItem from="1482304660076" duration="4799000" />
-      <workItem from="1482373135684" duration="13711000" />
+      <workItem from="1482373135684" duration="13779000" />
+      <workItem from="1482395122228" duration="2077000" />
+      <workItem from="1482400594171" duration="1650000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1471500329538</created>
@@ -1682,7 +1675,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1760165000" />
+    <option name="totallyTimeSpent" value="1763960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1694,14 +1687,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7475193" sideWeight="0.08924731" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3016129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27056277" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5151515" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1713,10 +1706,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43109152" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5117057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43109152" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60281384" sideWeight="0.9107527" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42857143" sideWeight="0.9107527" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.8971774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25605902" sideWeight="0.10282258" order="2" side_tool="true" content_ui="tabs" />
@@ -1823,20 +1816,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/docLib/DocLibController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/equipment/table_1_0.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="154" selection-start-line="2" selection-start-column="88" selection-end-line="2" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/docLib/form.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1869,7 +1848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1884,7 +1862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1892,7 +1869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1907,9 +1883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1917,7 +1890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1925,7 +1897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1933,7 +1904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1941,7 +1911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="12" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1949,7 +1918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5861">
           <caret line="161" column="18" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1965,7 +1933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="158" column="38" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1973,23 +1940,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="39" column="55" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/utils/cache/RedisCacheConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/utils/cache/RedisCacheConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/user/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-184">
           <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1997,18 +1955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-196">
           <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#3321#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/app/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2016,23 +1962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2040,7 +1969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2052,27 +1980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/person/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2080,7 +1991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2088,7 +1998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2096,7 +2005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2104,14 +2012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="84" column="66" selection-start-line="84" selection-start-column="66" selection-end-line="84" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -2136,7 +2036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1674">
           <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2152,21 +2051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3985">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <marker date="1478240458000" expanded="true" signature="2433:2447" ph="..." />
-            <marker date="1478240458000" expanded="true" signature="2515:2534" ph="..." />
-            <marker date="1478240458000" expanded="true" signature="6720:6734" ph="..." />
-            <marker date="1478240458000" expanded="true" signature="6805:6835" ph="..." />
-            <marker date="1478240458000" expanded="true" signature="6885:6894" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1569">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2186,19 +2070,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/dao/equipments/EquipmentsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2221,6 +2096,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentsClassificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="120" column="78" selection-start-line="120" selection-start-column="78" selection-end-line="120" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/equipmentsClassification/equipmentsClassification.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -2229,10 +2112,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/equipment/EquipmentsClassificationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/domain/person/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="120" column="78" selection-start-line="120" selection-start-column="78" selection-end-line="120" selection-end-column="78" />
+        <state relative-caret-position="272">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE-sources.jar!/org/springframework/cache/annotation/CacheConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/person/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/locations/LocationsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/service/commonData/CommonDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/app/locations/location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/budget/BudgetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/app/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novsky/controller/locations/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
           <folding />
         </state>
       </provider>

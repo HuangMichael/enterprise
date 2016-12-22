@@ -67,7 +67,6 @@ public class LocationsService extends BaseService {
      * @param location 位置编号
      * @return 当前用户分配的所有位置节点
      */
-    @Cacheable(value = "locTree", key = "'locTree'")
     public List<Object> findTree(String location) {
         List<Object> objectList = null;
 

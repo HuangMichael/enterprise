@@ -125,10 +125,8 @@ public class CommonDataService extends BaseService {
      * @return 查询我的下属位置信息
      * 先从session中找  如果失败再做查询
      */
-    @Cacheable(value = "myLocs", key = "'myLocs'")
     public List<Vlocations> findMyVLocation(String location) {
         List<Vlocations> locationsList = vlocationsRepository.findByLocationStartingWith(location);
-        log.info(this.getClass().getCanonicalName() + "------------loading data findMyVLocation");
         return locationsList;
     }
 

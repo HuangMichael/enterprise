@@ -92,9 +92,7 @@ public class LocationController extends BaseController {
     public List<Object> findTree(HttpSession httpSession) {
         List<Object> objectList = null;
         User user = SessionUtil.getCurrentUserBySession(httpSession);
-        if (user.getLocation() != null && !user.getLocation().equals("")) {
-            objectList = locationsService.findTree(user.getLocation() + "%");
-        }
+        objectList = locationsService.findTree("BJ%");
         return objectList;
     }
 

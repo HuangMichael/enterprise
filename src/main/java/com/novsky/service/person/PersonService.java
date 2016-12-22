@@ -25,7 +25,7 @@ import java.util.List;
  * 人员业务类
  */
 @Service
-@CacheConfig(cacheNames = "personCache")
+@CacheConfig(cacheNames = "person")
 public class PersonService extends BaseService {
 
 
@@ -38,7 +38,7 @@ public class PersonService extends BaseService {
      * @return 查询激活状态的人员
      */
 
-    @Cacheable(value = "person", key = "'person'")
+    @Cacheable( key = "'person'")
     public List<Person> findActivePerson() {
         return personRepository.findByStatus(CommonStatusType.STATUS_YES);
     }
@@ -64,7 +64,7 @@ public class PersonService extends BaseService {
      * @param person
      * @return 保存人员信息
      */
-    @CacheEvict(value = "person", key = "'person'",allEntries = true)
+    @CacheEvict( key = "'person'")
     public Person save(Person person) {
 
         if(person.getStatus()==null ||person.getStatus().equals("")){
@@ -78,17 +78,17 @@ public class PersonService extends BaseService {
     /**
      * @param person
      * @return 更新人员信息
-     */
+     *//*
     public Person update(Person person) {
         return personRepository.save(person);
-    }
+    }*/
 
 
     /**
      * @param id
      * @return 删除人员信息
      */
-    @CacheEvict(value = "person", key = "'person'",allEntries = true)
+    @CacheEvict( key = "'person'")
     public boolean delete(Long id) {
         personRepository.delete(id);
         return (personRepository.findById(id) == null);
