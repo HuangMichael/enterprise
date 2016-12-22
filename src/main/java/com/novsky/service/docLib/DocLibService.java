@@ -1,7 +1,9 @@
 package com.novsky.service.docLib;
 
+import com.novsky.dao.docLib.DocLibListRepository;
 import com.novsky.dao.docLib.DocLibRepository;
 import com.novsky.domain.docLib.DocLib;
+import com.novsky.domain.docLib.DocLibList;
 import com.novsky.service.app.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,8 @@ public class DocLibService extends BaseService {
 
     @Autowired
     DocLibRepository docLibRepository;
+    @Autowired
+    DocLibListRepository docLibListRepository;
 
 
     /**
@@ -59,4 +63,11 @@ public class DocLibService extends BaseService {
     }
 
 
+    /**
+     * @param docLibId
+     * @return 根据文档库目录id查询所有的文档信息
+     */
+    public List<DocLibList> findByDocLib(Long docLibId) {
+        return docLibListRepository.findByParent_Id(docLibId);
+    }
 }

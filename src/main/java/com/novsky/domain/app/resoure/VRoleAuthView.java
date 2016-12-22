@@ -5,6 +5,7 @@ import com.novsky.domain.role.Role;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by HUANGBIN on 2016/4/15.
@@ -14,11 +15,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "v_role_auth_view")
 @Data
-@Setter
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class VRoleAuthView {
+public class VRoleAuthView implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

@@ -7,6 +7,7 @@ import com.novsky.domain.locations.Vlocations;
 import com.novsky.object.ReturnObject;
 import com.novsky.service.app.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -66,6 +67,7 @@ public class LocationsService extends BaseService {
      * @param location 位置编号
      * @return 当前用户分配的所有位置节点
      */
+    @Cacheable(value = "locTree", key = "'locTree'")
     public List<Object> findTree(String location) {
         List<Object> objectList = null;
 
@@ -91,7 +93,6 @@ public class LocationsService extends BaseService {
     public Locations findById(Long id) {
         return locationsRepository.findById(id);
     }
-
 
 
     /**

@@ -19,6 +19,8 @@ import com.novsky.service.role.RoleService;
 import com.novsky.service.user.UserService;
 import com.novsky.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
@@ -123,83 +125,6 @@ public class ResourceService extends BaseService {
 
     }
 
-    /**
-     * 根据状态查询数据资源
-     */
-    public List<Resource> findByResourceLevel(Long resourceLevel) {
-
-        return resourceRepository.findByResourceLevel(resourceLevel);
-
-    }
-
-
-    /**
-     * 根据状态查询数据资源
-     */
-    public List<Resource> findByResourceLevelLessThan(Long resourceLevel) {
-
-        return resourceRepository.findByResourceLevelLessThan(resourceLevel);
-
-    }
-
-    /**
-     * 根据状态查询静态数据资源
-     */
-    public List<Resource> findAllStaticResources() {
-
-        return resourceRepository.findBystaticFlag(true);
-    }
-
-    /**
-     * 检查资源合法性
-     */
-
-    public Boolean checkResource(List<Resource> resourceList, String url) {
-
-        boolean result = false;
-        for (Resource resource : resourceList) {
-            if (url.contains(resource.getResourceUrl())) {
-                result = true;
-                break;
-            }
-        }
-        return result;
-    }
-
-
-    /**
-     * @param types  文件类型数组
-     * @param suffix 文件后缀名
-     * @return
-     */
-    public boolean containsType(String types[], String suffix) {
-
-        boolean result = false;
-        for (String type : types) {
-            if (type.equals(suffix)) {
-                result = true;
-                break;
-            }
-        }
-        return result;
-    }
-
-
-    /**
-     * 保存数据资源
-     */
-    public Resource addResource(String url) {
-        Resource resource = new Resource();
-        boolean exits = resourceRepository.findByResourceUrl(url).size() > 0;
-        if (!exits) {
-            resource.setResourceUrl(url);
-            resource.setResourceName(url);
-            resource.setStaticFlag(true);
-            resource = resourceRepository.save(resource);
-        }
-        return resource;
-    }
-
 
     /**
      * @param idStr
@@ -217,6 +142,7 @@ public class ResourceService extends BaseService {
      * @param resourceName
      * @return
      */
+    @CacheEvict(value = "roleAuth", key = "'roleAuth'")
     public List<VRoleAuthView> findByRoleAndResourceNameContaining(Long roleId, String resourceName) {
         Role role = roleService.findById(roleId);
         return vRoleAuthViewRepository.findByRoleAndResourceNameContaining(role, resourceName);
@@ -226,6 +152,7 @@ public class ResourceService extends BaseService {
      * @param userId 用户名
      * @return 根据userId和资源级别查询资源
      */
+    @CacheEvict(value = "roleAuthLevel", key = "'roleAuthLevel'")
     public List<VRoleAuthView> findResourcesByUserIdAndResourceLevel(Long userId, Long resourceLevel) {
         //首先根据用户id查询出用户对应的角色
         List<VRoleAuthView> vRoleAuthViewList = null;
@@ -263,6 +190,7 @@ public class ResourceService extends BaseService {
 
     /**
      * 根据AppName查询应用菜单
+     *
      * @param httpSession
      * @param controllerName
      * @return

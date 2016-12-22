@@ -4,6 +4,7 @@ package com.novsky.controller.docLib;/**
 
 import com.novsky.controller.common.BaseController;
 import com.novsky.domain.docLib.DocLib;
+import com.novsky.domain.docLib.DocLibList;
 import com.novsky.domain.equipments.Equipments;
 import com.novsky.service.docLib.DocLibService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +49,17 @@ public class DocLibController extends BaseController {
     @ResponseBody
     public DocLib findById(@PathVariable("id") Long id) {
         return docLibService.findById(id);
+
+    }
+
+
+    /**
+     * 查询根节点
+     */
+    @RequestMapping(value = "/findDocs/{id}")
+    @ResponseBody
+    public List<DocLibList> findDocs(@PathVariable("id") Long id) {
+        return docLibService.findByDocLib(id);
 
     }
 

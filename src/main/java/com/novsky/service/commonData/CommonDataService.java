@@ -1,6 +1,5 @@
 package com.novsky.service.commonData;
 
-import com.novsky.dao.app.org.OrgRepository;
 import com.novsky.dao.app.resource.ResourceRepository;
 import com.novsky.dao.equipments.EquipmentsClassificationRepository;
 import com.novsky.dao.equipments.EquipmentsRepository;
@@ -34,6 +33,8 @@ import com.novsky.service.workOrder.WorkOrderReportCartService;
 import com.novsky.utils.CommonStatusType;
 import com.novsky.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
@@ -47,6 +48,7 @@ import java.util.List;
  * Created by huangbin on 2016/3/24.
  */
 @Service
+@CacheConfig
 public class CommonDataService extends BaseService {
 
     @Autowired
@@ -120,22 +122,13 @@ public class CommonDataService extends BaseService {
 
     /**
      * @param location    位置编号
-     * @param httpSession 查询位置我的视图信息
      * @return 查询我的下属位置信息
      * 先从session中找  如果失败再做查询
      */
-    public List<Vlocations> findMyVLocation(String location, HttpSession httpSession) {
-        List<Vlocations> locationsList = null;
-        Object object = httpSession.getAttribute("locationsList");
-        if (object != null) {
-            locationsList = (ArrayList<Vlocations>) object;
-            log.info(this.getClass().getCanonicalName() + "------------从缓存中查询位置信息");
-        } else {
-            if (location != null && !location.equals("")) {
-                locationsList = vlocationsRepository.findByLocationStartingWith(location);
-                log.info(this.getClass().getCanonicalName() + "------------从缓存中查询位置信息");
-            }
-        }
+    @Cacheable(value = "myLocs", key = "'myLocs'")
+    public List<Vlocations> findMyVLocation(String location) {
+        List<Vlocations> locationsList = vlocationsRepository.findByLocationStartingWith(location);
+        log.info(this.getClass().getCanonicalName() + "------------loading data findMyVLocation");
         return locationsList;
     }
 
@@ -275,21 +268,12 @@ public class CommonDataService extends BaseService {
 
 
     /**
-     * @param httpSession
      * @return 查询设备种类信息
      */
-    public List<Person> findActivePerson(HttpSession httpSession) {
-        List<Person> activePerson = null;
-        Object object = httpSession.getAttribute("activePerson");
-        if (object != null) {
-            activePerson = (ArrayList<Person>) object;
-            log.info(this.getClass().getCanonicalName() + "------------从缓存中查询人员");
-        } else {
-            activePerson = personRepository.findByStatus(CommonStatusType.STATUS_YES);
-            log.info(this.getClass().getCanonicalName() + "------------从数据库中查询人员");
-            httpSession.setAttribute("activePerson", activePerson);
-            log.info(this.getClass().getCanonicalName() + "------------将人员放入缓存");
-        }
+    @Cacheable(value = "person", key = "'person'")
+    public List<Person> findActivePerson() {
+        List<Person> activePerson = personRepository.findByStatus(CommonStatusType.STATUS_YES);
+        log.info(this.getClass().getCanonicalName() + "------------从数据库中查询人员");
         return activePerson;
     }
 

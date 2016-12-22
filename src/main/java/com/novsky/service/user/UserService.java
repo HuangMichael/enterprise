@@ -14,6 +14,7 @@ import com.novsky.utils.search.Searchable;
 import com.novsky.utils.search.SortedSearchable;
 import com.novsky.service.app.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -40,6 +41,8 @@ public class UserService extends BaseService {
     /**
      * 根据状态查询用户
      */
+
+    @Cacheable(value = "users",key = "'users'")
     public List<User> findByStatus(String status) {
         return userRepository.findByStatus(status);
     }

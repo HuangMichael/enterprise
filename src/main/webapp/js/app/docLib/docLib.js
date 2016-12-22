@@ -23,9 +23,9 @@ var setting = {
     },
     callback: {
         onClick: function (event, treeId, treeNode, clickFlag) {
-
-            console.log("show id ---" + treeNode.id);
             fillForm(treeNode.id);
+            //$("#subListTable").bootgrid();
+           // initBootGrid("#subListTable");
             return true;
         }
     }

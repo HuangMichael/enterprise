@@ -56,7 +56,7 @@ public class CommonDataController extends BaseController {
 
     /**
      * @param httpSession 当前会话
-     * @return
+     * @return 查询我的位置
      */
     @RequestMapping(value = "/findMyLoc", method = RequestMethod.GET)
     @ResponseBody
@@ -64,7 +64,7 @@ public class CommonDataController extends BaseController {
         String location = SessionUtil.getCurrentUserLocationBySession(httpSession);
         List<Vlocations> locationList = null;
         if (location != null && !location.equals("")) {
-            locationList = commonDataService.findMyVLocation(location, httpSession);
+            locationList = commonDataService.findMyVLocation(location);
         }
         return locationList;
     }
@@ -138,13 +138,12 @@ public class CommonDataController extends BaseController {
 
 
     /**
-     * @param httpSession 当前会话
-     * @return 获得设备状态
+     * @return 查询在用人员
      */
     @RequestMapping(value = "/findActivePerson", method = RequestMethod.GET)
     @ResponseBody
-    public List<Person> findActivePerson(HttpSession httpSession) {
-        return commonDataService.findActivePerson(httpSession);
+    public List<Person> findActivePerson() {
+        return commonDataService.findActivePerson();
     }
 
 

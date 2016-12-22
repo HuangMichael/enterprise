@@ -10,8 +10,6 @@ import java.util.List;
  * 返回对象
  */
 @Data
-@Setter
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ReturnObject {

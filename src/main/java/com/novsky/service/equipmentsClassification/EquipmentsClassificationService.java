@@ -57,7 +57,9 @@ public class EquipmentsClassificationService extends BaseService {
 
 
     /**
-     * 新建设备分类
+     * 查询所有的设备分类
+     *
+     * @return
      */
     public List<EquipmentsClassification> findAll() {
         List<EquipmentsClassification> equipmentsClassificationList = equipmentsClassificationRepository.findAll();

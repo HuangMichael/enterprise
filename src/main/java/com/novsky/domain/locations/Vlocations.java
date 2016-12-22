@@ -4,6 +4,7 @@ package com.novsky.domain.locations;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by huangbin on 2016/03/17 0023.
@@ -14,7 +15,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Vlocations implements java.io.Serializable {
+public class Vlocations implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -22,7 +23,5 @@ public class Vlocations implements java.io.Serializable {
     private String location; //位置描述
     @Column(length = 100)
     private String locName; //位置描述
-
-
 
 }
